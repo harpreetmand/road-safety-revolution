@@ -1,0 +1,26 @@
+{
+  "name": "obia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harpreetmand/limewebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harpreetmand/limewebsite/issues"
+  },
+  "homepage": "https://github.com/harpreetmand/limewebsite#readme",
+  "description": "Powerful shell for rapidly deploying your WordPress projects."
+}

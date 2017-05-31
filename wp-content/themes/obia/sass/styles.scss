@@ -1,0 +1,252 @@
+@import 'include/reset';
+@import 'include/animate';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+// @import 'include/neat-orange';
+@import 'include/font-awesome.min';
+@import 'include/settings';
+// @import 'include/style';
+// @import 'include/layers';
+// @import 'include/navigation';
+$mainColor: #7AC142;
+$mainColorDark: #006738;
+$mainColorLight: #DCECCC;
+$bg-color: #fff;
+$navBG: #49acd2;
+$hover-color-dark: #3D6FB6;
+$hover-color: #16a085;
+$text-color: #fff;
+$linkColor: #42ACCF;
+$formBg: #a0daec;
+$formButton: #f6905d;
+$bodyTextColor: #808284;
+
+$darkBlue : #2e0058;
+$lightBlue: #39b0d0;
+$orange : #fcb31b;
+$lightGreen: #c3d940;
+$textColor: #231f20;
+$placeHolderColor: #6d6e71;
+
+.nopadl {
+  padding-left: 0px !important;
+}
+.nopadt {
+  padding-top: 0px !important;
+}
+.nomargint {
+  margin-top: 0px !important;
+}
+
+
+@font-face {
+    font-family: 'frutiger_lt_std45_light';
+    src: url('../fonts/frutigerltstd-light-webfont.eot');
+    src: url('../fonts/frutigerltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-light-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-light-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-light-webfont.svg#frutiger_lt_std45_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'frutiger_lt_std65_bold';
+    src: url('../fonts/frutigerltstd-bold-webfont.eot');
+    src: url('../fonts/frutigerltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-bold-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-bold-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-bold-webfont.svg#frutiger_lt_std65_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'frutiger_lt_std55_roman';
+    src: url('../fonts/frutigerltstd-roman-webfont.eot');
+    src: url('../fonts/frutigerltstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-roman-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-roman-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-roman-webfont.svg#frutiger_lt_std55_roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+$primaryFont: 'frutiger_lt_std45_light';
+$boldFont: 'frutiger_lt_std65_bold';
+
+/**    MIXINS    **/
+@mixin border($color){
+    border: 4px solid $color;
+}
+/* Rectangle In */
+@mixin hvr-rectangle-in($color) {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: $color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-in:hover, .hvr-rectangle-in:focus, .hvr-rectangle-in:active {
+  color: white;
+}
+.hvr-rectangle-in:hover:before, .hvr-rectangle-in:focus:before, .hvr-rectangle-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+
+.trans{
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+
+
+a{
+  color: $linkColor;
+  text-decoration: none;
+
+&:hover{
+  text-decoration: none;
+}
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    min-width: 320px;
+}
+.cf{
+  clear: both;
+}
+.mar20{
+    margin-bottom: 20px
+}
+.mar10{
+    margin-bottom: 10px
+}
+.mar25{
+    margin: 25px auto;
+}
+.bigger{
+  color: $darkBlue;
+  font-size: 25px;
+  font-size: 30px;
+  padding: 25px 15px 20px;
+}
+.vAllign{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.hAllign{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.pad0{
+  padding: 0px;
+}
+
+/*5 row colum*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $placeHolderColor;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $placeHolderColor;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $placeHolderColor;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $placeHolderColor;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: $placeHolderColor;
+}
+.btn-obia{
+    padding: 20px 50px;
+    color: #fff;
+    float: right;
+    background-color: $lightBlue;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 10px;
+}
+h2{
+    color: $lightBlue;
+}
+h3{
+    color: $darkBlue;
+    border-bottom: 8px solid $orange;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+.box{
+    // border: thin solid red;
+}
+.bigPurple{
+    color: $darkBlue;
+    font-size: 24px;
+}
+@import 'homepage'
