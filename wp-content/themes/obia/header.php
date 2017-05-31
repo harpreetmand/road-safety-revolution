@@ -64,20 +64,4 @@
         ?>
     </div>
 </nav>
-<div class="container underNav navbar-fixed-top center">
-	<div class="all">
-		<div class="col-md-1"></div>
-		<div class="col-sm-3">
-			<img src="<?php echo get_site_url(); ?>/img/obia.png" alt"OBIA logo" class="img-responsive"/>
-		</div>
-		<div class="col-sm-8 text">
-			<span class="year">2017</span>
-			<span class="underNavBigger">
-				Awards of<br/> Excellence<br/>
-			</span>
-			<span class="underNavSmall">
-				in Brain Injury Rehabilitation
-			</span>
-		</div>
-	</div>
-</div>
+
