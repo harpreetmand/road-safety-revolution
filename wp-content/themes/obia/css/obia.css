@@ -11079,15 +11079,6 @@ img.tp-slider-alternative-image {
   peft: 0px;
   z-index: 0; }
 
-.nopadl {
-  padding-left: 0px !important; }
-
-.nopadt {
-  padding-top: 0px !important; }
-
-.nomargint {
-  margin-top: 0px !important; }
-
 @font-face {
   font-family: 'frutiger_lt_std45_light';
   src: url("../fonts/frutigerltstd-light-webfont.eot");
@@ -11106,6 +11097,18 @@ img.tp-slider-alternative-image {
   src: url("../fonts/frutigerltstd-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/frutigerltstd-roman-webfont.woff") format("woff"), url("../fonts/frutigerltstd-roman-webfont.ttf") format("truetype"), url("../fonts/frutigerltstd-roman-webfont.svg#frutiger_lt_std55_roman") format("svg");
   font-weight: normal;
   font-style: normal; }
+body {
+  font-family: "frutiger_lt_std45_light"; }
+
+.nopadl {
+  padding-left: 0px !important; }
+
+.nopadt {
+  padding-top: 0px !important; }
+
+.nomargint {
+  margin-top: 0px !important; }
+
 /**    MIXINS    **/
 /* Rectangle In */
 .hvr-rectangle-in:before {
@@ -11139,15 +11142,10 @@ img.tp-slider-alternative-image {
   transition: all 2s; }
 
 a {
-  color: #42ACCF;
+  color: #fff;
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  min-width: 320px; }
 
 .cf {
   clear: both; }
@@ -11160,22 +11158,6 @@ body {
 
 .mar25 {
   margin: 25px auto; }
-
-.bigger {
-  color: #2e0058;
-  font-size: 25px;
-  font-size: 30px;
-  padding: 25px 15px 20px; }
-
-.vAllign {
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute; }
-
-.hAllign {
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute; }
 
 .pad0 {
   padding: 0px; }
@@ -11206,49 +11188,16 @@ body {
   .col-lg-15 {
     width: 20%;
     float: left; } }
-::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #6d6e71; }
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #6d6e71;
-  opacity: 1; }
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #6d6e71;
-  opacity: 1; }
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #6d6e71; }
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #6d6e71; }
-
 .btn-obia {
   padding: 20px 50px;
   color: #fff;
   float: right;
-  background-color: #39b0d0;
+  background-color: #febe10;
   border-radius: 0px;
   border: none;
   margin-bottom: 10px; }
 
-h2 {
-  color: #39b0d0; }
-
-h3 {
-  color: #2e0058;
-  border-bottom: 8px solid #fcb31b;
-  margin-bottom: 15px;
-  margin-top: 30px;
-  padding-bottom: 5px; }
-
-.bigPurple {
-  color: #2e0058;
-  font-size: 24px; }
+.box {
+  border: thin solid red; }
 
 /*# sourceMappingURL=obia.css.map */

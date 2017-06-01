@@ -7,35 +7,14 @@
 // @import 'include/style';
 // @import 'include/layers';
 // @import 'include/navigation';
-$mainColor: #7AC142;
-$mainColorDark: #006738;
-$mainColorLight: #DCECCC;
-$bg-color: #fff;
-$navBG: #49acd2;
-$hover-color-dark: #3D6FB6;
-$hover-color: #16a085;
-$text-color: #fff;
-$linkColor: #42ACCF;
-$formBg: #a0daec;
-$formButton: #f6905d;
-$bodyTextColor: #808284;
+$bgColor: #000;
+$yellow: #febe10;
+$fontColor: #231f20;
+$white: #fff;
+$linkColor: #fff;
 
-$darkBlue : #2e0058;
-$lightBlue: #39b0d0;
-$orange : #fcb31b;
-$lightGreen: #c3d940;
-$textColor: #231f20;
-$placeHolderColor: #6d6e71;
 
-.nopadl {
-  padding-left: 0px !important;
-}
-.nopadt {
-  padding-top: 0px !important;
-}
-.nomargint {
-  margin-top: 0px !important;
-}
+
 
 
 @font-face {
@@ -71,6 +50,21 @@ $placeHolderColor: #6d6e71;
 }
 $primaryFont: 'frutiger_lt_std45_light';
 $boldFont: 'frutiger_lt_std65_bold';
+
+body{
+    font-family: $primaryFont;
+}
+
+.nopadl {
+  padding-left: 0px !important;
+}
+.nopadt {
+  padding-top: 0px !important;
+}
+.nomargint {
+  margin-top: 0px !important;
+}
+
 
 /**    MIXINS    **/
 @mixin border($color){
@@ -132,11 +126,7 @@ a{
   text-decoration: none;
 }
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    min-width: 320px;
-}
+
 .cf{
   clear: both;
 }
@@ -149,22 +139,8 @@ body{
 .mar25{
     margin: 25px auto;
 }
-.bigger{
-  color: $darkBlue;
-  font-size: 25px;
-  font-size: 30px;
-  padding: 25px 15px 20px;
-}
-.vAllign{
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-}
-.hAllign{
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-}
+
+
 .pad0{
   padding: 0px;
 }
@@ -206,47 +182,20 @@ body{
     }
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: $placeHolderColor;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: $placeHolderColor;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: $placeHolderColor;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: $placeHolderColor;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: $placeHolderColor;
-}
+
 .btn-obia{
     padding: 20px 50px;
     color: #fff;
     float: right;
-    background-color: $lightBlue;
+    background-color: $yellow;
     border-radius: 0px;
     border: none;
     margin-bottom: 10px;
 }
-h2{
-    color: $lightBlue;
-}
-h3{
-    color: $darkBlue;
-    border-bottom: 8px solid $orange;
-    margin-bottom: 15px;
-    margin-top: 30px;
-    padding-bottom: 5px;
-}
+
+
 .box{
-    // border: thin solid red;
+     border: thin solid red;
 }
-.bigPurple{
-    color: $darkBlue;
-    font-size: 24px;
-}
+@import 'header';
 @import 'homepage'
