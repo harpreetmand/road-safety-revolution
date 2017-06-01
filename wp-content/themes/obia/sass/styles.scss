@@ -4,19 +4,31 @@
 // @import 'include/neat-orange';
 @import 'include/font-awesome.min';
 @import 'include/settings';
+@import 'variables';
 // @import 'include/style';
 // @import 'include/layers';
 // @import 'include/navigation';
-$bgColor: #fff;
-$black: #000;
-$yellow: #febe10;
-$fontColor: #231f20;
-$white: #fff;
-$linkColor: #fff;
+<<<<<<< Updated upstream
 
 
 
+=======
+@import "font-awesome-compass";
+@import "font-awesome";
+>>>>>>> Stashed changes
 
+html, body, .wrapper {
+  height: 100%;
+}
+a {
+  opacity: 0.9;
+}
+a:hover {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 1;
+}
 
 @font-face {
     font-family: 'frutiger_lt_std45_light';
@@ -233,4 +245,4 @@ a{
      border: thin solid red;
 }
 @import 'header';
-@import 'homepage'
+@import 'homepage';

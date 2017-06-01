@@ -1,2 +1,6 @@
 .DS_Store
 wp-content/themes/obia/node_modules
+<<<<<<< HEAD
+=======
+.sass-cache
+>>>>>>> homepage
