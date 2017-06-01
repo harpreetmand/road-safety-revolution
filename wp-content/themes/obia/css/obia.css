@@ -11249,6 +11249,10 @@ a:hover {
   color: #fff;
   font-weight: 900; }
 
+.active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
 .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active {
   -webkit-transform: translateY(0);
   transform: translateY(0); }
@@ -11262,10 +11266,61 @@ a:hover {
     color: #fff; }
   .navbar .navbar-nav {
     position: relative;
-    top: 92px;
+    top: 100px;
     font-size: 20px; }
+    .navbar .navbar-nav li {
+      margin: 0px 10px; }
+      .navbar .navbar-nav li a {
+        padding: 10px 1px; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff; }
+
+.black {
+  background-color: #000;
+  color: #fff; }
+
+footer .join {
+  font-size: 100px;
+  line-height: .4;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  footer .join div {
+    margin: 0 auto;
+    display: table; }
+    footer .join div span {
+      font-size: 39px; }
+footer .logos {
+  padding: 28px 0; }
+
+@media (max-width: 1200px) {
+  .navbar .navbar-nav {
+    font-size: 18px; }
+
+  footer .logos {
+    padding: 50px 0; } }
+@media (max-width: 992px) {
+  .navbar {
+    height: 120px; }
+    .navbar .container {
+      width: 100%; }
+    .navbar .navbar-nav {
+      font-size: 14px;
+      top: 60px; }
+    .navbar .navbar-brand {
+      font-size: 25px; } }
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    top: 40px;
+    background-color: #000; }
+
+  footer .join div {
+    font-size: 65px; }
+    footer .join div span {
+      font-size: 25px; }
+  footer .logos {
+    padding: 50px 0; }
+    footer .logos img {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=obia.css.map */
