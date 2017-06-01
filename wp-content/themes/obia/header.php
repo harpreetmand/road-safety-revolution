@@ -45,9 +45,9 @@
         <span class="icon-bar"></span>
       </button>
      <a class="navbar-brand" href="</?php echo home_url(); ?>">
-                ROAD
-SAFETY
-REVOLUTION
+                ROAD<br/>
+SAFETY<br/>
+REVOLUTION<br/>
             </a>
     </div>
 

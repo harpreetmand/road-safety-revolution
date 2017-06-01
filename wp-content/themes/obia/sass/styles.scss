@@ -7,7 +7,8 @@
 // @import 'include/style';
 // @import 'include/layers';
 // @import 'include/navigation';
-$bgColor: #000;
+$bgColor: #fff;
+$black: #000;
 $yellow: #febe10;
 $fontColor: #231f20;
 $white: #fff;
@@ -53,6 +54,7 @@ $boldFont: 'frutiger_lt_std65_bold';
 
 body{
     font-family: $primaryFont;
+    background-color: $bgcolor;
 }
 
 .nopadl {
