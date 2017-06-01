@@ -11249,10 +11249,6 @@ a:hover {
   color: #fff;
   font-weight: 900; }
 
-.navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active {
-  -webkit-transform: translateY(0);
-  transform: translateY(0); }
-
 .navbar {
   background-color: #000;
   height: 150px; }
