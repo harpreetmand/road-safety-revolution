@@ -44,10 +44,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-     <a class="navbar-brand" href="</?php echo home_url(); ?>">
+     <a class="navbar-brand" href="<?php echo home_url(); ?>">
                 ROAD<br/>
-SAFETY<br/>
-REVOLUTION<br/>
+                <span class="yellow">SAFETY</span><br/>
+                REVOLUTION<br/>
             </a>
     </div>
 
