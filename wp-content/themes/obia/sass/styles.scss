@@ -4,15 +4,10 @@
 // @import 'include/neat-orange';
 @import 'include/font-awesome.min';
 @import 'include/settings';
+@import 'variables';
 // @import 'include/style';
 // @import 'include/layers';
 // @import 'include/navigation';
-$bgColor: #fff;
-$black: #000;
-$yellow: #febe10;
-$fontColor: #231f20;
-$white: #fff;
-$linkColor: #fff;
 
 
 
@@ -233,4 +228,4 @@ a{
      border: thin solid red;
 }
 @import 'header';
-@import 'homepage'
+@import 'homepage';
