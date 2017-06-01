@@ -1,0 +1,57 @@
+// variables
+$bgColor: #fff;
+$black: #000;
+$yellow: #febe10;
+$fontColor: #231f20;
+$white: #fff;
+$linkColor: #fff;
+
+// MIXINS
+@mixin condensedFont {
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+
+// sizing
+.mar0 {
+  margin: 0px !important;
+}
+.marb20 {
+  margin-bottom: 20px !important;
+}
+
+// contents
+.blackbg {
+  background-color: $black !important;
+  color: $white !important;
+}
+.whitebg {
+  background-color: $white !important;
+  color: $black !important;
+}
+
+.col-xs-12.left {
+  padding-left: 0px !important;
+}
+.col-xs-12.right {
+  padding-right: 0px !important;
+}
+
+
+// other useful
+.cf {
+  clear: both !important;
+}
+
+// class Mixins
+.wpcf7-submit {
+  background-color: #febe10;
+  color: #000 !important;
+  @include condensedFont;
+  width: 90px !important;
+  font-size: 20px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 4px !important;
+  border: 0px;
+}

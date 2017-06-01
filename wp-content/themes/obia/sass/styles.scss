@@ -8,10 +8,27 @@
 // @import 'include/style';
 // @import 'include/layers';
 // @import 'include/navigation';
+<<<<<<< Updated upstream
 
 
 
+=======
+@import "font-awesome-compass";
+@import "font-awesome";
+>>>>>>> Stashed changes
 
+html, body, .wrapper {
+  height: 100%;
+}
+a {
+  opacity: 0.9;
+}
+a:hover {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 1;
+}
 
 @font-face {
     font-family: 'frutiger_lt_std45_light';
