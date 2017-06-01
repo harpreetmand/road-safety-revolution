@@ -1,0 +1,124 @@
+main {
+  height: 100%;
+}
+.welcome-main {
+  background: url(../img/road-safety-revolution.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  .container {
+    position: relative;
+    height: 100%;
+    .scroll-down {
+      position: absolute;
+      background-color: $yellow;
+      width: 85px;
+      height: 85px;
+      text-align: center;
+      border-radius: 100%;
+      font-size: 52px;
+      line-height: 85px;
+      padding-top: 4px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 45px;
+      display: block;
+      cursor: pointer;
+      i {
+        cursor: pointer;
+      }
+    }
+    .win-a-bike {
+      float: right;
+      width: 380px;
+      position: relative;
+      @include condensedFont;
+      p {
+        font-size: 42px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 49px;
+        padding: 50px 0;
+      }
+      img {
+        width: 100%;
+        &#join-the-rsr {
+          position: absolute;
+          width: 450px;
+          margin-left: 50%;
+          -webkit-transform: translate(-50%, -42%);
+          -moz-transform: translate(-50%, -42%);
+          transform: translate(-50%, -42%);
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+.enter-to-win {
+  .left {
+    padding-left: 0px !important;
+    padding: 50px 80px !important;
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .right {
+    height: 100%;
+  }
+  form {
+    p {
+      margin-bottom: 12px;
+    }
+    label {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    input {
+      width: 100%;
+      color: lighten($black,25);
+      padding: 7px;
+      font-size: 16px;
+    }
+    #req {
+      font-size: 13px;
+      font-weight: lighter;
+      color: rgba($white,0.88);
+    }
+  }
+  #terms {
+    color: rgba(255,255,255,0.6);
+    line-height: 20px;
+    font-size: 13.5px;
+    padding-top: 10px;
+  }
+}
+
+// media queries
+@media (min-width: 1921px) {
+  .welcome-main {
+    .container {
+      .win-a-bike {
+          width: 520px;
+          position: absolute;
+          right: -15%;
+          p {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 57px;
+            padding: 60px 0;
+          }
+          img#join-the-rsr {
+            width: 600px;
+            -webkit-transform: translate(-50%, -42%);
+            -moz-transform: translate(-50%, -42%);
+            transform: translate(-50%, -42%);
+          }
+      }
+    }
+  }
+}

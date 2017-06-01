@@ -1,6 +1,9 @@
 (function ($, root, undefined) {
-	
+  $(window).resize(function() {
+    mainBg();
+  });
 	$(function () {
+
 		
 		'use strict';
 		
@@ -9,6 +12,15 @@
 		// 	document.getElementById('menu-item-86').classList.add('active')
 		// }
 		
+
+    mainBg();
+
 	});
-	
+
+  function mainBg(){
+    var domHeight = $(window).innerHeight()
+    var navHeight = 175;
+    var newHeight = domHeight - navHeight;
+    $('#main-bg').height(newHeight);
+  }
 })(jQuery, this);

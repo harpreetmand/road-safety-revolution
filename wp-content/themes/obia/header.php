@@ -27,12 +27,12 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+
 			<div class="headerImage">
 				<div class="overlay"></div>
 			</div>
 		    <!--</?php echo wp_nav_menu( 'nav-menu' ); ?>-->
-            <nav class="navbar navbar-default mar0" role="navigation">
+            <nav class="navbar navbar-default marb7" role="navigation">
                 <div class="container">        
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,7 +65,4 @@
                     </div>
                 </div>
             </nav>
-        </div>
-<div style="background-color: #000;">
-<br/><br/><br/><br/><br/><br/><br/><br/>
-</div>
+   

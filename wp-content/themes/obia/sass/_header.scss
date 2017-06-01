@@ -19,6 +19,10 @@ a:hover{
       -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+.navbar-default{
+    border: none;
+    border-radius: 0px;
+}
 .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .active{
   -webkit-transform: translateY(0);
   transform: translateY(0);
