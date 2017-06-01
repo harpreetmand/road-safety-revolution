@@ -24,7 +24,6 @@ define('DB_NAME', 'limeadco_obia');
 
 /** MySQL database username */
 define('DB_USER', 'limeadco_obia');
-ia
 
 /** MySQL database password */
 define('DB_PASSWORD', 'Donutman2017');
