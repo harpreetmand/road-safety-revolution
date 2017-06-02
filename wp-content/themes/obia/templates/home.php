@@ -36,6 +36,7 @@
           more information about this prize draw, please contact Joseph Pileggi<br>
           - Thomson, Rogers at 416-868-3190.
         </p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/road-safety-revolution-sponsors.png" alt="Road Safety Revolution Sponsors" />
       </div>
       <div class="col-xs-12 col-md-6 right">
         <img src="<?php echo get_template_directory_uri(); ?>/img/win-a-bike-helmet-today.png" alt="Win A Bike Helmet Today" />
