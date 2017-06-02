@@ -13818,6 +13818,7 @@ main {
   height: 250px;
   background-color: #000; }
   .welcome-bikeLaw .carousel .carousel-control {
+    margin: 0 20px;
     font-size: 50px;
     background: #febe10;
     border-radius: 180px;
@@ -13832,7 +13833,17 @@ main {
     text-align: center;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 70%; }
+    .welcome-bikeLaw .carousel .carousel-inner .font {
+      font-size: 60px; }
+    .welcome-bikeLaw .carousel .carousel-inner .small {
+      font-size: 14px;
+      line-height: .4; }
+
+.carousel-indicators li {
+  visibility: hidden; }
 
 .font100 {
   font-size: 100px;

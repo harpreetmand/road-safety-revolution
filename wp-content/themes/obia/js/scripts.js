@@ -12,7 +12,11 @@
 		// 	document.getElementById('menu-item-86').classList.add('active')
 		// }
 		
+ $(document).ready(function() {
+    $('.carousel').carousel('pause');
+    // $('.carousel').carousel({interval: 2000});
 
+  });
     mainBg();
 
 	});

@@ -23,6 +23,7 @@
         height: 250px;
         background-color: $black;
         .carousel-control{
+            margin: 0 20px;
             @include scrollDown;
             bottom: auto;
             width: auto;
@@ -34,11 +35,21 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            color: $white;
+
+            width: 70%;
+            .font{
+                font-size: 60px;
+            }
+            .small{
+                font-size: 14px;
+                line-height: .4;
+            }
         }
     }
 
-
 }
+.carousel-indicators li { visibility: hidden; }
 .font100{
     font-size: 100px;
     line-height: 1;
