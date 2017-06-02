@@ -13469,7 +13469,8 @@ a:hover {
   font-style: normal; }
 body {
   font-family: "frutiger_lt_std45_light";
-  background-color: #fff; }
+  background-color: #fff;
+  min-width: 320px; }
 
 .nopadl {
   padding-left: 0px !important; }
@@ -13792,5 +13793,70 @@ main {
       -webkit-transform: translate(-50%, -42%);
       -moz-transform: translate(-50%, -42%);
       transform: translate(-50%, -42%); } }
+.welcome-bikeLaw .top {
+  display: flex;
+  position: relative; }
+  .welcome-bikeLaw .top .flex-item {
+    width: 50%;
+    position: relative; }
+    .welcome-bikeLaw .top .flex-item .bgImage {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 15px;
+      margin: 0 auto; }
+  .welcome-bikeLaw .top .scrollDown {
+    font-size: 50px;
+    background: #febe10;
+    border-radius: 180px;
+    padding: 0px 14px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; }
+.welcome-bikeLaw .carousel {
+  height: 250px;
+  background-color: #000; }
+  .welcome-bikeLaw .carousel .carousel-control {
+    font-size: 50px;
+    background: #febe10;
+    border-radius: 180px;
+    padding: 0px 14px;
+    bottom: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .welcome-bikeLaw .carousel .carousel-inner {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.font100 {
+  font-size: 100px;
+  line-height: 1;
+  font-weight: 900; }
+
+@media (max-width: 767px) {
+  .welcome-bikeLaw .top {
+    display: flex; }
+    .welcome-bikeLaw .top .flex-item {
+      width: 100%;
+      background: url(../img/bike-law-girl-on-bike.jpg) no-repeat fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover cover;
+      background-position: 30% 24%;
+      /* height: 100%; */
+      display: flex; }
+      .welcome-bikeLaw .top .flex-item .bgImage {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.7); } }
+@media (max-width: 400px) {
+  .font100 {
+    font-size: 60px; } }
 
 /*# sourceMappingURL=obia.css.map */

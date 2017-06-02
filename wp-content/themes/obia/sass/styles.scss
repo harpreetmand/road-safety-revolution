@@ -62,6 +62,7 @@ $boldFont: 'frutiger_lt_std65_bold';
 body{
     font-family: $primaryFont;
     background-color: $bgColor;
+    min-width: 320px;
 }
 
 .nopadl {
@@ -92,6 +93,23 @@ body{
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+}
+@mixin hAllign{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin vAllign{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin scrollDown{
+
+    font-size: 50px;
+    background: #febe10;
+    border-radius: 180px;
+    padding: 0px 14px;
 }
 .hvr-rectangle-in:before {
   content: "";
@@ -241,3 +259,4 @@ a{
 }
 @import 'header';
 @import 'homepage';
+@import 'bikeLaw';
