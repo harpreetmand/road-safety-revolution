@@ -1,0 +1,87 @@
+.welcome-bikeLaw{
+    .top{
+        display: flex;
+        position: relative;
+        .flex-item{
+            width: 50%;
+            position: relative;
+            .bgImage{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 15px;
+                    margin: 0 auto;
+            }
+        }
+        .scrollDown{
+            @include scrollDown;
+            @include hAllign;
+            bottom: 10px;
+        }
+    }
+    .carousel{
+        height: 250px;
+        background-color: $black;
+        .carousel-control{
+            @include scrollDown;
+            bottom: auto;
+            width: auto;
+            @include vAllign;
+        }
+        .carousel-inner{
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+}
+.font100{
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+    @media (max-width: 767px) {
+       .welcome-bikeLaw{
+    .top{
+        display: flex;
+        .flex-item{
+            width: 100%;
+            background: url(../img/bike-law-girl-on-bike.jpg) no-repeat fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover cover;
+            background-position: 30% 24%;
+            /* height: 100%; */
+            display: flex;
+
+            .bgImage{
+                position: relative;
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+
+}
+    }
+    @media (max-width: 400px) {
+        .font100{
+            font-size: 60px;
+        }
+    
+    }
+
+        //     background: url(../img/bike-law-girl-on-bike.jpg) no-repeat center center fixed;
+        // -webkit-background-size: cover;
+        // -moz-background-size: cover;
+        // -o-background-size: cover;
+        // background-size: cover;
+        // height: 100%;
+        // display: flex;
+
