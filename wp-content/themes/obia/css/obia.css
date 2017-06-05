@@ -11079,6 +11079,9 @@ img.tp-slider-alternative-image {
   peft: 0px;
   z-index: 0; }
 
+.condensedFont {
+  font-family: "Arial Narrow", Arial, sans-serif; }
+
 .mar0 {
   margin: 0px !important; }
 
@@ -13489,7 +13492,8 @@ a:hover {
 body {
   font-family: "frutiger_lt_std45_light";
   background-color: #fff;
-  min-width: 320px; }
+  min-width: 320px;
+  font-size: 16px; }
 
 .nopadl {
   padding-left: 0px !important; }
@@ -13942,15 +13946,39 @@ footer .logos {
     position: absolute;
     text-align: center;
     left: 50%;
-    top: 50%;
+    top: 75%;
     transform: translate(-50%, -50%);
     color: #fff;
+    height: 250px;
     width: 70%; }
     .welcome-bikeLaw .carousel .carousel-inner .font {
-      font-size: 60px; }
+      font-size: 52px; }
     .welcome-bikeLaw .carousel .carousel-inner .small {
       font-size: 14px;
       line-height: .4; }
+.welcome-bikeLaw .bikeLawFaq {
+  display: flex; }
+  .welcome-bikeLaw .bikeLawFaq .faqBlack {
+    background-color: #000;
+    color: #fff; }
+    .welcome-bikeLaw .bikeLawFaq .faqBlack .font100 {
+      padding: 50px 70px; }
+  .welcome-bikeLaw .bikeLawFaq .flex-item {
+    width: 50%;
+    position: relative; }
+    .welcome-bikeLaw .bikeLawFaq .flex-item .yellowBack {
+      background-color: #febe10;
+      font-size: 20px;
+      padding: 10px 30px; }
+    .welcome-bikeLaw .bikeLawFaq .flex-item p {
+      padding: 10px 30px; }
+  .welcome-bikeLaw .bikeLawFaq .bgImage {
+    background: url(../img/bike-law-faq.jpg) no-repeat fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 100%; }
 
 .carousel-indicators li {
   visibility: hidden; }
@@ -13975,7 +14003,21 @@ footer .logos {
       display: flex; }
       .welcome-bikeLaw .top .flex-item .bgImage {
         position: relative;
-        background-color: rgba(255, 255, 255, 0.7); } }
+        background-color: rgba(255, 255, 255, 0.7); }
+
+  .welcome-bikeLaw .carousel .carousel-control {
+    opacity: .2; }
+    .welcome-bikeLaw .carousel .carousel-control:hover {
+      opacity: .9; }
+  .welcome-bikeLaw .carousel .carousel-inner {
+    height: auto;
+    top: 50%;
+    width: 80%; }
+    .welcome-bikeLaw .carousel .carousel-inner .font {
+      font-size: 20px; } }
+@media (max-width: 992px) {
+  .welcome-bikeLaw .bikeLawFaq .flex-item {
+    width: 100%; } }
 @media (max-width: 400px) {
   .font100 {
     font-size: 60px; } }
