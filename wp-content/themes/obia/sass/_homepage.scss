@@ -83,6 +83,9 @@
 // home page road signs
 .home-roadsigns {
   color: $black;
+  .container > .col-sm-6 {
+    min-height: 400px;
+  }
   h3 {
     @include condensedFont;
     font-size: 100px;
@@ -111,23 +114,35 @@
 }
 .home-roadbg {
   position: relative;
-  .roadsign-bg {
-    background: url(../img/road-safety-sign-1.png) no-repeat center center fixed;
+  .home-roadbg-pic {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 600px;
+    &.bigger {
+      min-height: 800px;
+    }
+    &.dooring-bg {
+      background: url(../img/road-safety-sign-1.png) no-repeat center center fixed;
+    }
+    &.collisions-bg {
+      background: url(../img/road-safety-sign-2.png) no-repeat center center fixed;
+    }
+    &.potholes-bg {
+      background: url(../img/road-safety-sign-3.png) no-repeat center center fixed;
+    }
+    &.roadwork-bg {
+      background: url(../img/road-safety-sign-4.png) no-repeat center center fixed;
+    }
   }
   .roadsign-text {
     @include condensedFont;
     @include hAllign;
     border: 10px solid $white;
-    height: 60%;
     position: absolute;
     margin: auto;
-    top: 0;
-    bottom: 0;
+    bottom: 160px;
     text-align: center;
     color: $white;
     -webkit-text-shadow: 1px 2px  8px rgba($black, 0.65);
@@ -137,7 +152,8 @@
     -moz-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
     box-shadow: 0px 0px 12px 2px rgba($black,0.55);
     padding: 25px 65px;
-    &.type-1 {
+    min-width: 960px;
+    &.type-1, &.type-3 {
       font-size: 47px;
       span {
         font-size: 160px;
@@ -145,9 +161,57 @@
         margin: -50px 0 -25px;
       }
     }
+    &.type-3 {
+      span {
+        float: left;
+      }
+      p {
+        text-align: left;
+        display: inline-block;
+        font-size: 49px;
+        line-height: 51px;
+        padding-top: 31px;
+        margin-left: -20px;
+      }
+    }
+    &.type-2{
+      span {
+        font-size: 128px;
+        line-height: 90px;
+        span {
+          font-size: 75px;
+          display: block;
+          margin-bottom: -118px;
+        }
+      }
+      font-size: 42px;
+      padding-top: 3%;
+    }
+    &.type-4{
+      span {
+        font-size: 155px;
+        display: inline-block;
+        line-height: 160px;
+      }
+      font-size: 48px;
+      line-height: 50px;
+    }
   }
   .scroll-down {
     bottom: 20px;
+  }
+}
+.submit-story {
+  background-color: $yellow;
+  text-align: center;
+  @include condensedFont;
+  padding: 12px;
+  font-weight: bold;
+  a {
+    color: $black;
+    font-size: 35px;
+    text-transform: uppercase;
+
   }
 }
 

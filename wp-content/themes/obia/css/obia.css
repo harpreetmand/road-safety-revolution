@@ -11106,6 +11106,7 @@ img.tp-slider-alternative-image {
   background-color: #febe10;
   color: #000 !important;
   font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
   width: 90px !important;
   font-size: 20px !important;
   text-transform: uppercase;
@@ -11113,7 +11114,7 @@ img.tp-slider-alternative-image {
   padding: 4px !important;
   border: 0px; }
 
-.scroll-down {
+.scroll-down, .scroll-up {
   position: absolute;
   background-color: #febe10;
   width: 85px;
@@ -11129,7 +11130,7 @@ img.tp-slider-alternative-image {
   bottom: 45px;
   display: block;
   cursor: pointer; }
-  .scroll-down i {
+  .scroll-down i, .scroll-up i {
     cursor: pointer; }
 
 /*!
@@ -13730,7 +13731,8 @@ footer .logos {
       float: right;
       width: 380px;
       position: relative;
-      font-family: "Arial Narrow", Arial, sans-serif; }
+      font-family: "Arial Narrow", Arial, sans-serif;
+      font-weight: bold; }
       .welcome-main .container .win-a-bike p {
         font-size: 42px;
         font-weight: bold;
@@ -13782,8 +13784,11 @@ footer .logos {
 
 .home-roadsigns {
   color: #000; }
+  .home-roadsigns .container > .col-sm-6 {
+    min-height: 400px; }
   .home-roadsigns h3 {
     font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
     font-size: 100px;
     margin-top: 110px; }
   .home-roadsigns p {
@@ -13804,24 +13809,32 @@ footer .logos {
 
 .home-roadbg {
   position: relative; }
-  .home-roadbg .roadsign-bg {
-    background: url(../img/road-safety-sign-1.png) no-repeat center center fixed;
+  .home-roadbg .home-roadbg-pic {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 600px; }
+    .home-roadbg .home-roadbg-pic.bigger {
+      min-height: 800px; }
+    .home-roadbg .home-roadbg-pic.dooring-bg {
+      background: url(../img/road-safety-sign-1.png) no-repeat center center fixed; }
+    .home-roadbg .home-roadbg-pic.collisions-bg {
+      background: url(../img/road-safety-sign-2.png) no-repeat center center fixed; }
+    .home-roadbg .home-roadbg-pic.potholes-bg {
+      background: url(../img/road-safety-sign-3.png) no-repeat center center fixed; }
+    .home-roadbg .home-roadbg-pic.roadwork-bg {
+      background: url(../img/road-safety-sign-4.png) no-repeat center center fixed; }
   .home-roadbg .roadsign-text {
     font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     border: 10px solid #fff;
-    height: 60%;
     position: absolute;
     margin: auto;
-    top: 0;
-    bottom: 0;
+    bottom: 160px;
     text-align: center;
     color: #fff;
     -webkit-text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
@@ -13830,15 +13843,53 @@ footer .logos {
     -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.55);
     box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.55);
-    padding: 25px 65px; }
-    .home-roadbg .roadsign-text.type-1 {
+    padding: 25px 65px;
+    min-width: 960px; }
+    .home-roadbg .roadsign-text.type-1, .home-roadbg .roadsign-text.type-3 {
       font-size: 47px; }
-      .home-roadbg .roadsign-text.type-1 span {
+      .home-roadbg .roadsign-text.type-1 span, .home-roadbg .roadsign-text.type-3 span {
         font-size: 160px;
         display: inline-block;
         margin: -50px 0 -25px; }
+    .home-roadbg .roadsign-text.type-3 span {
+      float: left; }
+    .home-roadbg .roadsign-text.type-3 p {
+      text-align: left;
+      display: inline-block;
+      font-size: 49px;
+      line-height: 51px;
+      padding-top: 31px;
+      margin-left: -20px; }
+    .home-roadbg .roadsign-text.type-2 {
+      font-size: 42px;
+      padding-top: 3%; }
+      .home-roadbg .roadsign-text.type-2 span {
+        font-size: 128px;
+        line-height: 90px; }
+        .home-roadbg .roadsign-text.type-2 span span {
+          font-size: 75px;
+          display: block;
+          margin-bottom: -118px; }
+    .home-roadbg .roadsign-text.type-4 {
+      font-size: 48px;
+      line-height: 50px; }
+      .home-roadbg .roadsign-text.type-4 span {
+        font-size: 155px;
+        display: inline-block;
+        line-height: 160px; }
   .home-roadbg .scroll-down {
     bottom: 20px; }
+
+.submit-story {
+  background-color: #febe10;
+  text-align: center;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  padding: 12px; }
+  .submit-story a {
+    color: #000;
+    font-size: 35px;
+    text-transform: uppercase; }
 
 @media (min-width: 1921px) {
   .welcome-main .container .win-a-bike {
