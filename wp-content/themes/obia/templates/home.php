@@ -36,7 +36,7 @@
           more information about this prize draw, please contact Joseph Pileggi<br>
           - Thomson, Rogers at 416-868-3190.
         </p>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/road-safety-revolution-sponsors.png" alt="Road Safety Revolution Sponsors" />
+        <img id="sponsors" src="<?php echo get_template_directory_uri(); ?>/img/road-safety-revolution-sponsors.png" alt="Road Safety Revolution Sponsors" />
       </div>
       <div class="col-xs-12 col-md-6 right">
         <img src="<?php echo get_template_directory_uri(); ?>/img/win-a-bike-helmet-today.png" alt="Win A Bike Helmet Today" />
@@ -44,6 +44,91 @@
       <div class="cf"></div>
     </div>
   </section>
+  <section class="home-roadsigns">
+    <div class="container">
+      <div class="col-xs-12 col-sm-6">
+        <img class="roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/dooring-incidents.png" alt="Dooring Incidents" />
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h3>DOORING</h3>
+        <p>
+          Dooring incidents are on the rise in Toronto with
+          a 58.3% increase between 2014 and 2016, and
+          209 reported dooring incidents in 2016 alone.
+          Dooring can lead to serious injuries and even death.
+          Governments are taking too long to address road
+          safety issues, so it’s up to us to be safer.
+        </p>
+      </div>
+      <div class="cf"></div>
+      <div class="blackbg slogan">
+        <div class="col-xs-12 col-sm-6">
+          &nbsp;
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          Road Safety Starts By Seeing The Signs
+        </div>
+        <div class="cf"></div>
+      </div>
+    </div>
+  </section>
+  <section class="home-roadbg">
+    <div class="roadsign-bg">
+      <div class="container">
+        <div class="roadsign-text type-1">
+          JARVIS ST. BIKE LANES SAW A<br>
+          <span>3x</span><br>
+          TRAFFIC INCREASE PRIOR TO REMOVAL
+        </div>
+        <a href="#" class="scroll-down">
+          <i class="fa fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="home-roadsigns">
+    <div class="container">
+      <div class="col-xs-12 col-sm-6">
+        <img class="roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/collision-incidents.png" alt="Collision Incidents" />
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h3>POTHOLES</h3>
+        <p>
+          Dooring incidents are on the rise in Toronto with
+          a 58.3% increase between 2014 and 2016, and
+          209 reported dooring incidents in 2016 alone.
+          Dooring can lead to serious injuries and even death.
+          Governments are taking too long to address road
+          safety issues, so it’s up to us to be safer.
+        </p>
+      </div>
+      <div class="cf"></div>
+      <div class="blackbg slogan">
+        <div class="col-xs-12 col-sm-6">
+          &nbsp;
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          Road Safety Starts By Seeing The Signs
+        </div>
+        <div class="cf"></div>
+      </div>
+    </div>
+  </section>
+  <section class="home-roadbg">
+    <div class="roadsign-bg">
+      <div class="container">
+        <div class="roadsign-text type-1">
+          JARVIS ST. BIKE LANES SAW A<br>
+          <span>3x</span><br>
+          TRAFFIC INCREASE PRIOR TO REMOVAL
+        </div>
+        <a href="#" class="scroll-down">
+          <i class="fa fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
+<div class="cf"></div>
 <!--</?php get_sidebar(); ?>-->
 <?php get_footer(); ?>

@@ -11113,6 +11113,25 @@ img.tp-slider-alternative-image {
   padding: 4px !important;
   border: 0px; }
 
+.scroll-down {
+  position: absolute;
+  background-color: #febe10;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 52px;
+  line-height: 85px;
+  padding-top: 4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 45px;
+  display: block;
+  cursor: pointer; }
+  .scroll-down i {
+    cursor: pointer; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -13441,7 +13460,7 @@ html, body, .wrapper {
   height: 100%; }
 
 a {
-  opacity: 0.9; }
+  opacity: 0.95; }
 
 a:hover {
   -webkit-transition: all 0.2s;
@@ -13697,37 +13716,16 @@ footer .logos {
     padding: 50px 0; }
     footer .logos img {
       margin: 0 auto; } }
-main {
-  height: 100%; }
-
 .welcome-main {
-  background: url(../img/road-safety-revolution.png) no-repeat center center fixed;
+  background: url(../img/road-safety-revolution.png) no-repeat center center fixed #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%; }
+  min-height: 600px; }
   .welcome-main .container {
     position: relative;
     height: 100%; }
-    .welcome-main .container .scroll-down {
-      position: absolute;
-      background-color: #febe10;
-      width: 85px;
-      height: 85px;
-      text-align: center;
-      border-radius: 100%;
-      font-size: 52px;
-      line-height: 85px;
-      padding-top: 4px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      bottom: 45px;
-      display: block;
-      cursor: pointer; }
-      .welcome-main .container .scroll-down i {
-        cursor: pointer; }
     .welcome-main .container .win-a-bike {
       float: right;
       width: 380px;
@@ -13757,6 +13755,8 @@ main {
     font-size: 40px; }
 .enter-to-win .right {
   height: 100%; }
+  .enter-to-win .right img {
+    width: 100%; }
 .enter-to-win form p {
   margin-bottom: 12px; }
 .enter-to-win form label {
@@ -13773,9 +13773,72 @@ main {
   color: rgba(255, 255, 255, 0.88); }
 .enter-to-win #terms {
   color: rgba(255, 255, 255, 0.6);
-  line-height: 20px;
+  line-height: 21px;
   font-size: 13.5px;
   padding-top: 10px; }
+.enter-to-win #sponsors {
+  width: 100%;
+  padding: 29px 0; }
+
+.home-roadsigns {
+  color: #000; }
+  .home-roadsigns h3 {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 100px;
+    margin-top: 110px; }
+  .home-roadsigns p {
+    font-size: 19px;
+    padding-right: 95px; }
+  .home-roadsigns .slogan {
+    padding: 23px 0;
+    font-size: 21px;
+    margin: 15px 0 65px; }
+  .home-roadsigns .roadsign {
+    position: absolute;
+    width: 90%;
+    top: -60px; }
+    .home-roadsigns .roadsign.left {
+      left: 0%; }
+    .home-roadsigns .roadsign.right {
+      right: 0%; }
+
+.home-roadbg {
+  position: relative; }
+  .home-roadbg .roadsign-bg {
+    background: url(../img/road-safety-sign-1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px; }
+  .home-roadbg .roadsign-text {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid #fff;
+    height: 60%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    -webkit-text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    -moz-text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.55);
+    padding: 25px 65px; }
+    .home-roadbg .roadsign-text.type-1 {
+      font-size: 47px; }
+      .home-roadbg .roadsign-text.type-1 span {
+        font-size: 160px;
+        display: inline-block;
+        margin: -50px 0 -25px; }
+  .home-roadbg .scroll-down {
+    bottom: 20px; }
 
 @media (min-width: 1921px) {
   .welcome-main .container .win-a-bike {

@@ -1,36 +1,13 @@
-main {
-  height: 100%;
-}
 .welcome-main {
-  background: url(../img/road-safety-revolution.png) no-repeat center center fixed;
+  background: url(../img/road-safety-revolution.png) no-repeat center center fixed #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  min-height: 600px;
   .container {
     position: relative;
     height: 100%;
-    .scroll-down {
-      position: absolute;
-      background-color: $yellow;
-      width: 85px;
-      height: 85px;
-      text-align: center;
-      border-radius: 100%;
-      font-size: 52px;
-      line-height: 85px;
-      padding-top: 4px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      bottom: 45px;
-      display: block;
-      cursor: pointer;
-      i {
-        cursor: pointer;
-      }
-    }
     .win-a-bike {
       float: right;
       width: 380px;
@@ -68,6 +45,9 @@ main {
   }
   .right {
     height: 100%;
+    img {
+      width: 100%;
+    }
   }
   form {
     p {
@@ -90,10 +70,84 @@ main {
     }
   }
   #terms {
-    color: rgba(255,255,255,0.6);
-    line-height: 20px;
+    color: rgba($white, 0.6);
+    line-height: 21px;
     font-size: 13.5px;
     padding-top: 10px;
+  }
+  #sponsors {
+    width: 100%;
+    padding: 29px 0;
+  }
+}
+// home page road signs
+.home-roadsigns {
+  color: $black;
+  h3 {
+    @include condensedFont;
+    font-size: 100px;
+    margin-top: 110px;
+  }
+  p {
+    font-size: 19px;
+    padding-right: 95px;
+  }
+  .slogan {
+    padding: 23px 0;
+    font-size: 21px;
+    margin: 15px 0 65px;
+  }
+  .roadsign {
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    &.left {
+      left: 0%;
+    }
+    &.right {
+      right: 0%;
+    }
+  }
+}
+.home-roadbg {
+  position: relative;
+  .roadsign-bg {
+    background: url(../img/road-safety-sign-1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+  }
+  .roadsign-text {
+    @include condensedFont;
+    @include hAllign;
+    border: 10px solid $white;
+    height: 60%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: $white;
+    -webkit-text-shadow: 1px 2px  8px rgba($black, 0.65);
+    -moz-text-shadow: 1px 2px  8px rgba($black, 0.65);
+    text-shadow: 1px 2px  8px rgba($black, 0.65);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
+    -moz-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
+    box-shadow: 0px 0px 12px 2px rgba($black,0.55);
+    padding: 25px 65px;
+    &.type-1 {
+      font-size: 47px;
+      span {
+        font-size: 160px;
+        display: inline-block;
+        margin: -50px 0 -25px;
+      }
+    }
+  }
+  .scroll-down {
+    bottom: 20px;
   }
 }
 
