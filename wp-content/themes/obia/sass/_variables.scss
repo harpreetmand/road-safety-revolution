@@ -50,7 +50,7 @@ $linkColor: #fff;
 
 // class Mixins
 .wpcf7-submit {
-  background-color: #febe10;
+  background-color: $yellow;
   color: #000 !important;
   @include condensedFont;
   width: 90px !important;
@@ -59,4 +59,25 @@ $linkColor: #fff;
   font-weight: bold;
   padding: 4px !important;
   border: 0px;
+}
+
+.scroll-down, .scroll-up {
+  position: absolute;
+  background-color: $yellow;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 52px;
+  line-height: 85px;
+  padding-top: 4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 45px;
+  display: block;
+  cursor: pointer;
+  i {
+    cursor: pointer;
+  }
 }
