@@ -11109,7 +11109,6 @@ img.tp-slider-alternative-image {
   background-color: #febe10;
   color: #000 !important;
   font-family: "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
   width: 90px !important;
   font-size: 20px !important;
   text-transform: uppercase;
@@ -13735,8 +13734,7 @@ footer .logos {
       float: right;
       width: 380px;
       position: relative;
-      font-family: "Arial Narrow", Arial, sans-serif;
-      font-weight: bold; }
+      font-family: "Arial Narrow", Arial, sans-serif; }
       .welcome-main .container .win-a-bike p {
         font-size: 42px;
         font-weight: bold;
@@ -13792,7 +13790,6 @@ footer .logos {
     min-height: 400px; }
   .home-roadsigns h3 {
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
     font-size: 100px;
     margin-top: 110px; }
   .home-roadsigns p {
@@ -13831,7 +13828,6 @@ footer .logos {
       background: url(../img/road-safety-sign-4.png) no-repeat center center fixed; }
   .home-roadbg .roadsign-text {
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -13888,8 +13884,8 @@ footer .logos {
   background-color: #febe10;
   text-align: center;
   font-family: "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-  padding: 12px; }
+  padding: 12px;
+  font-weight: bold; }
   .submit-story a {
     color: #000;
     font-size: 35px;
