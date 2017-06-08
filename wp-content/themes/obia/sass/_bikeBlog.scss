@@ -1,0 +1,143 @@
+.welcome-blog {
+    .top {
+        display: flex;
+        position: relative;
+        .flex-item {
+            width: 50%;
+            position: relative;
+            .bgImage {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 15px;
+                margin: 0 auto;
+            }
+        }
+        .scrollDown {
+            @include scrollDown;
+            @include hAllign;
+            bottom: 10px;
+        }
+    }
+    .blogs {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-between;
+        .blogsAll {
+            position: relative;
+            max-width: 31.3%;
+            border: thin solid;
+            margin: 15px 0px;
+            .blogsTitle {
+                font-size: 24px;
+                @include condensedFont;
+                padding: 15px;
+                line-height: 1;
+                height: 90px;
+            }
+            .blogsBody {
+                padding: 15px;
+                height: 200px;
+            }
+            .readMore {
+                span {
+                    @include scrollDown;
+                    margin: 0 auto 10px;
+                    display: table;
+                    font-size: 30px;
+                    padding: 10px 14px;
+                    // @include hAllign;
+                }
+            }
+        }
+    }
+}
+
+.welcome-single-blog {
+    .goBack {
+        a {
+            color: $lightFont;
+            font-size: 20px;
+        }
+    }
+    .blogImage {
+        height: 350px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: all 0.2s;
+        }
+    }
+    .blogsAll {
+        .blogsTitle {
+            @include condensedFont;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        .author {
+            color: $lightFont;
+        }
+        .blogsBody {
+            a {
+                color: $fontColor;
+                text-decoration: underline;
+            }
+            iframe {
+                float: left;
+                margin: 5px 20px 5px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .welcome-blog .blogs .blogsAll .blogsBody {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-blog {
+        .top {
+            display: flex;
+            .flex-item {
+                width: 100%;
+                background: url(../img/bike-blog.jpg) no-repeat fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover cover;
+                background-position: 30% 24%;
+                /* height: 100%; */
+                display: flex;
+                .bgImage {
+                    position: relative;
+                    background-color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+    .welcome-blog .blogs {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 992px) {
+    .welcome-blog .bikeLawFaq .flex-item {
+        width: 100%;
+    }
+    .welcome-blog .blogs .blogsAll {
+        max-width: 340px;
+        .blogsBody {
+            height: 230px;
+        }
+    }
+    .welcome-single-blog .blogsAll .blogsBody iframe {
+        width: 100%;
+        float: none;
+    }
+}

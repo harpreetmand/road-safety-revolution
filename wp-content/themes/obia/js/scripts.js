@@ -15,12 +15,25 @@
  $(document).ready(function() {
     $('.carousel').carousel('pause');
     // $('.carousel').carousel({interval: 2000});
-     myFunction();
+    //  myFunction();
 
 
 
   });
     mainBg();
+if(document.getElementById('paralax')){
+
+
+    $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    var paralax = document.getElementById('paralax');
+    // Do something
+    paralax.style.marginTop = "-"+scroll/2+"px";
+
+});
+  }
+
+
 
 	});
 
@@ -56,5 +69,21 @@ var w = parseInt(window.outerWidth);
 
     }else if(w <=992){
 
+    }
+}
+
+
+function getThumbnail(name)
+{
+    var image = new Image();
+    image.src = image_url;
+
+    image.onload = function()
+    {
+        return image;
+    }
+    image.onerror = function()
+    {
+        return "images/default.jpg";
     }
 }
