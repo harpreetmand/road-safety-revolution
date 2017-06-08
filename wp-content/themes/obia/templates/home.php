@@ -6,7 +6,7 @@
         <i class="fa fa-arrow-down"></i>
       </a>
       <div class="win-a-bike whitebg">
-        <p>
+        <p class="hidden-xs">
           YOU COULD WIN<br>
           A BIKE HELMET
         </p>
@@ -16,8 +16,8 @@
     </div>
   </section>
   <section class="enter-to-win">
-    <div class="container">
-      <div class="col-xs-12 col-md-6 left blackbg">
+    <div class="container" id="homePEnter">
+      <div class="left blackbg">
         <h2>ENTER FOR A CHANCE<br>TO WIN A BIKE HELMET</h2>
         <?php echo do_shortcode('[contact-form-7 id="741" title="Win A Bike"]'); ?>
         <div class="cf"></div>
@@ -38,8 +38,8 @@
         </p>
         <img id="sponsors" src="<?php echo get_template_directory_uri(); ?>/img/road-safety-revolution-sponsors.png" alt="Road Safety Revolution Sponsors" />
       </div>
-      <div class="col-xs-12 col-md-6 right">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/win-a-bike-helmet-today.png" alt="Win A Bike Helmet Today" />
+      <div class="right hidden-xs hidden-sm" id="pImage">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/win-a-bike-helmet-today.png" alt="Win A Bike Helmet Today" /> -->
       </div>
       <div class="cf"></div>
     </div>
@@ -47,9 +47,9 @@
   <section class="home-roadsigns">
     <div class="container">
       <div class="col-xs-12 col-sm-6">
-        <img class="roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/dooring-incidents.png" alt="Dooring Incidents" />
+        <img class="hidden-xs roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/dooring-incidents.png" alt="Dooring Incidents" />
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 texted">
         <h3>DOORING</h3>
         <p>
           Dooring incidents are on the rise in Toronto with
@@ -62,7 +62,7 @@
       </div>
       <div class="cf"></div>
       <div class="blackbg slogan">
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6 hidden-xs">
           &nbsp;
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -88,7 +88,10 @@
   </section>
   <section class="home-roadsigns">
     <div class="container">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 col-md-push-6">
+        <img class="hidden-xs roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/collision-incidents.png" alt="Collision Incidents" />
+      </div>
+      <div class="col-xs-12 col-sm-6 texted col-md-pull-6">
         <h3>COLLISIONS</h3>
         <p>
           Collisions in bike lanes are far too common.
@@ -98,15 +101,12 @@
           address road safety issues, so it’s up to us to be safer.
         </p>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <img class="roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/collision-incidents.png" alt="Collision Incidents" />
-      </div>
       <div class="cf"></div>
       <div class="blackbg slogan">
         <div class="col-xs-12 col-sm-6">
           Road Safety Is Headed In The Wrong Direction
         </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6 hidden-xs">
           &nbsp;
         </div>
         <div class="cf"></div>
@@ -130,9 +130,9 @@
   <section class="home-roadsigns">
     <div class="container">
       <div class="col-xs-12 col-sm-6">
-        <img class="roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/pothole-incidents.png" alt="Dooring Incidents" />
+        <img class="hidden-xs roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/pothole-incidents.png" alt="Dooring Incidents" />
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 texted">
         <h3>POTHOLES</h3>
         <p>
           Potholes, both in and out of bike lanes, are a big
@@ -144,7 +144,7 @@
       </div>
       <div class="cf"></div>
       <div class="blackbg slogan">
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6 hidden-xs">
           &nbsp;
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -172,7 +172,10 @@
   </section>
   <section class="home-roadsigns">
     <div class="container">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 col-sm-6 col-md-push-6">
+        <img class="hidden-xs roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/roadwork-incidents.png" alt="Road Work Incidents" />
+      </div>
+      <div class="col-xs-12 col-sm-6 texted col-md-pull-6">
         <h3>ROAD WORK</h3>
         <p>
           Toronto’s poor road construction practices have lead
@@ -183,15 +186,12 @@
           up to us to be safer.
         </p>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <img class="roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/roadwork-incidents.png" alt="Road Work Incidents" />
-      </div>
       <div class="cf"></div>
       <div class="blackbg slogan">
         <div class="col-xs-12 col-sm-6">
           Bike Safety Shouldn’t Be A Sign Of The Times
         </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6 hidden-xs">
           &nbsp;
         </div>
         <div class="cf"></div>

@@ -23,7 +23,7 @@
 
 
 
-            $db = mysqli_connect("localhost","root","","bikeBlog") or die("Error " . mysqli_error($link));
+            $db = mysqli_connect("192.168.2.54","root","","bikeBlog") or die("Error " . mysqli_error($link));
             $db->set_charset("utf8");
             $result = $db->query("SELECT * FROM `wp_posts` WHERE `post_status` = 'publish' AND `post_type` = 'post' ORDER BY `post_date` DESC");
             if($result->num_rows > 0){
@@ -56,7 +56,7 @@
                         }
 ?>
 
-                        
+
 
                         </a>
                         <div class="blogsTitle"><?php echo $row['post_title']; ?></div>
