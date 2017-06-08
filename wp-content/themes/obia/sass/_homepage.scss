@@ -36,7 +36,12 @@
   }
 }
 .enter-to-win {
+  .container {
+    display: flex;
+  }
   .left {
+    width: 50%;
+    position: relative;
     padding-left: 0px !important;
     padding: 50px 80px !important;
     h2 {
@@ -44,7 +49,13 @@
     }
   }
   .right {
-    height: 100%;
+    width: 50%;
+    position: relative;
+    background: url(../img/win-a-bike-helmet-today.png) no-repeat fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     img {
       width: 100%;
     }
@@ -115,10 +126,10 @@
 .home-roadbg {
   position: relative;
   .home-roadbg-pic {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
     min-height: 600px;
     &.bigger {
       min-height: 800px;
@@ -145,9 +156,9 @@
     bottom: 160px;
     text-align: center;
     color: $white;
-    -webkit-text-shadow: 1px 2px  8px rgba($black, 0.65);
-    -moz-text-shadow: 1px 2px  8px rgba($black, 0.65);
-    text-shadow: 1px 2px  8px rgba($black, 0.65);
+    -webkit-text-shadow: 0px 1px 10px #000;
+    -moz-text-shadow: 0px 1px 10px #000;
+    text-shadow: 0px 1px 10px #000;
     -webkit-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
     -moz-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
     box-shadow: 0px 0px 12px 2px rgba($black,0.55);
@@ -207,6 +218,7 @@
   @include condensedFont;
   padding: 12px;
   font-weight: bold;
+  margin-top: 7px;
   a {
     color: $black;
     font-size: 35px;
@@ -238,5 +250,365 @@
           }
       }
     }
+  }
+}
+@media (max-width: 1280px) {
+  .home-roadsigns {
+    h3 {
+      font-size: 82px;
+      margin-top: 110px;
+      line-height: 85px;
+    }
+    .roadsign {
+      top: 100px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .welcome-main .container .win-a-bike {
+      width: 280px;
+      p {
+        font-size: 36px;
+        line-height: 41px;
+      }
+      img#join-the-rsr {
+        width: 330px;
+      }
+  }
+}
+@media (max-width: 998px) {
+  .enter-to-win .left {
+    padding: 20px 100px !important;
+    width: 100% !important;
+  }
+  .home-roadsigns {
+    h3 {
+      font-size: 77px;
+      line-height: 76px;
+      margin-top: 99px;
+    }
+    p {
+      padding-right: 0px;
+    }
+    .roadsign {
+      top: 100px;
+    }
+    .slogan {
+      padding: 15px 0;
+      font-size: 16px;
+      margin: 15px 0 35px;
+    }
+  }
+  .home-roadbg {
+    .roadsign-text {
+      min-width: 750px;
+      padding: 25px 35px;
+      &.type-4 {
+        font-size: 45px;
+        line-height: 51px;
+      }
+      &.type-2 {
+        font-size: 32px;
+        line-height: 46px;
+        span span {
+            font-size: 66px;
+            display: block;
+            margin-bottom: -118px;
+        }
+      }
+      &.type-1, &.type-3 {
+          font-size: 39px;
+      }
+      &.type-3 p {
+          font-size: 43px;
+          margin-left: 0px;
+      }
+    }
+  }
+  .home-roadbg .roadsign-text.type-1, .home-roadbg .roadsign-text.type-3 {
+      font-size: 39px;
+  }
+  .home-roadbg .roadsign-text.type-1 span, .home-roadbg .roadsign-text.type-3 span {
+    font-size: 130px;
+    display: inline-block;
+    margin: -17px 0 -25px;
+  }
+}
+@media (max-width: 768px) {
+  .enter-to-win .left {
+    padding: 20px 20px !important;
+  }
+  .welcome-main {
+    .container {
+      .win-a-bike {
+        width: 265px;
+        p {
+          font-size: 26px;
+          line-height: 31px;
+          padding: 17px 0;
+          margin-bottom: 0px;
+        }
+        img#join-the-rsr {
+            width: 280px;
+        }
+      }
+    }
+  }
+  .home-roadsigns {
+    .container > .col-sm-6 {
+        min-height: initial;
+    }
+    .container > .col-sm-6.texted {
+      width: 50%;
+    }
+    .roadsign {
+      top: 15px;
+      width: 48%;
+      left: inherit !important;
+      right: 0px;
+      z-index: -7;
+    }
+    h3 {
+      font-size: 55px;
+      line-height: 40px;
+      margin-top: 106px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .home-roadbg .roadsign-text {
+      min-width: 92%;
+      padding: 25px 35px;
+  }
+  .home-roadbg {
+    .roadsign-text {
+      &.type-1, &.type-3 {
+        font-size: 29px;
+      }
+      &.type-1 span, &.type-3 span {
+          font-size: 114px;
+          display: inline-block;
+          margin: -25px 0 -25px;
+      }
+      &.type-2 {
+        font-size: 24px;
+        line-height: 35px;
+        span {
+          font-size: 109px;
+          line-height: 96px;
+          span {
+              font-size: 55px;
+              display: block;
+              margin-bottom: -118px;
+          }
+        }
+      }
+      &.type-3 p {
+        font-size: 31px;
+        margin-left: 0px;
+        line-height: 36px;
+      }
+      &.type-4 {
+        font-size: 40px;
+        line-height: 45px;
+        span {
+          font-size: 140px;
+          display: inline-block;
+          line-height: 142px;
+        }
+      }
+    }
+  }
+  .home-roadbg .home-roadbg-pic {
+    min-height: 500px;
+    &.bigger {
+      min-height: 700px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-main .container .win-a-bike {
+    width: 215px;
+    p {
+      font-size: 22px;
+      line-height: 27px;
+    }
+    img#join-the-rsr {
+      width: 240px;
+    }
+  }
+  .home-roadsigns {
+    .container > .col-sm-6.texted {
+        width: 60%;
+    }
+    .roadsign {
+      top: 35px;
+      width: 45%;
+      left: inherit !important;
+      right: -13px !important;
+      z-index: -7;
+    }
+    h3 {
+      font-size: 47px;
+      padding-bottom: 3px;
+      margin-top: 100px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .home-roadbg {
+    .roadsign-text {
+      min-width: 92%;
+      padding: 15px 25px;
+      &.type-1, &.type-3 {
+        font-size: 23px;
+      }
+      &.type-1 span, &.type-3 span {
+        font-size: 90px;
+        margin: -21px 0 -21px;
+      }
+      &.type-3 span {
+        font-size: 83px;
+        margin: 0px 7px -6px;
+      }
+      &.type-2 {
+        font-size: 17px;
+        line-height: 35px;
+        span {
+          font-size: 89px;
+          line-height: 80px;
+          span {
+            font-size: 39px;
+            margin-bottom: -104px;
+          }
+        }
+      }
+      &.type-3 p {
+        font-size: 24px;
+        margin-left: 4px;
+        line-height: 31px;
+      }
+      &.type-4 {
+        font-size: 26px;
+        line-height: 32px;
+        span {
+          font-size: 140px;
+          display: inline-block;
+          line-height: 142px;
+        }
+      }
+    }
+  }
+  .home-roadbg .home-roadbg-pic {
+      min-height: 400px;
+      &.bigger {
+        min-height: 500px;
+      }
+  }
+  .submit-story a {
+    font-size: 23px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .welcome-main .container .win-a-bike {
+    width: 175px;
+    p {
+      font-size: 22px;
+      line-height: 27px;
+    }
+    img#join-the-rsr {
+      width: 195px;
+    }
+  }
+  .home-roadsigns {
+    .container > .col-sm-6.texted {
+        width: 100%;
+    }
+    .roadsign {
+      top: 35px;
+      width: 45%;
+      left: inherit !important;
+      right: -13px !important;
+      z-index: -7;
+    }
+    h3 {
+      margin-top: 40px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .slogan {
+      font-size: 14px;
+    }
+  }
+  .home-roadbg {
+    .roadsign-text {
+      min-width: 92%;
+      padding: 15px 25px;
+      &.type-1, &.type-3 {
+        font-size: 18px;
+      }
+      &.type-1 span, &.type-3 span {
+        font-size: 70px;
+        margin: -13px 0 -13px;
+      }
+      &.type-3 span {
+        font-size: 83px;
+        margin: 0px 7px -6px;
+      }
+      &.type-2 {
+        font-size: 18px;
+        line-height: 22px;
+        span {
+          font-size: 78px;
+          line-height: 103px;
+          span {
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: -104px;
+          }
+        }
+      }
+      &.type-3 p {
+        font-size: 22px;
+        margin-left: 4px;
+        line-height: 32px;
+        padding-top: 0px;
+      }
+      &.type-4 {
+        font-size: 22px;
+        line-height: 27px;
+        span {
+          font-size: 77px;
+          display: inline-block;
+          line-height: 113px;
+        }
+      }
+    }
+  }
+  .home-roadbg .home-roadbg-pic {
+      min-height: 400px;
+      &.bigger {
+        min-height: 500px;
+      }
+  }
+  .submit-story a {
+    font-size: 23px;
+  }
+  .welcome-main {
+    min-height: 300px;
+  }
+  #homePEnter {
+    padding: 0px;
+  }
+  .enter-to-win .left h2 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
