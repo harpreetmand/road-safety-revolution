@@ -13,6 +13,7 @@
     mainBg();
     bgDivImage();
     parallex();
+    buttonScroll();
 	});
 
   function mainBg(){
@@ -74,5 +75,22 @@
         paralax.style.marginTop = "-"+scroll/2+"px";
       });
     }
+  }
+  function buttonScroll(e) {
+    // get all buttons
+    var ids = $('.scrollDown').map(function() {
+      return this.id;
+    }).get();
+    $(ids).each(function(i) {
+      $("#" + this).on('click', function (){
+        event.preventDefault();
+        var nextDiv = $('#' + this.id + "h").offset().top;
+        jQuery('body').animate({ scrollTop: nextDiv});
+      })
+    });
+    $("#backToTop").on('click', function (){
+      event.preventDefault();
+      jQuery('body').animate({ scrollTop: 0});
+    })
   }
 })(jQuery, this);

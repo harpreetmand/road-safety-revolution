@@ -11116,7 +11116,7 @@ img.tp-slider-alternative-image {
   padding: 4px !important;
   border: 0px; }
 
-.scroll-down, .scroll-up {
+.scrollDown, .scroll-up {
   position: absolute;
   background-color: #febe10;
   width: 85px;
@@ -11132,7 +11132,7 @@ img.tp-slider-alternative-image {
   bottom: 45px;
   display: block;
   cursor: pointer; }
-  .scroll-down i, .scroll-up i {
+  .scrollDown i, .scroll-up i {
     cursor: pointer; }
 
 /*!
@@ -13887,7 +13887,7 @@ footer .logos {
         font-size: 155px;
         display: inline-block;
         line-height: 160px; }
-  .home-roadbg .scroll-down {
+  .home-roadbg .scrollDown {
     bottom: 20px; }
 
 .submit-story {

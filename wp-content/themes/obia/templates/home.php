@@ -2,7 +2,7 @@
 <main role="main">
   <section class="welcome-main" id="main-bg">
     <div class="container">
-      <a href="#" class="scroll-down">
+      <a href="#" class="scrollDown" id="btnscr-1">
         <i class="fa fa-arrow-down"></i>
       </a>
       <div class="win-a-bike whitebg">
@@ -15,7 +15,7 @@
       </div>
     </div>
   </section>
-  <section class="enter-to-win">
+  <section class="enter-to-win" id="btnscr-1h">
     <div class="container" id="homePEnter">
       <div class="left blackbg">
         <h2>ENTER FOR A CHANCE<br>TO WIN A BIKE HELMET</h2>
@@ -80,13 +80,13 @@
           <span>3x</span><br>
           TRAFFIC INCREASE PRIOR TO REMOVAL
         </div>
-        <a href="#" class="scroll-down">
+        <a href="#" class="scrollDown" id="btnscr-2">
           <i class="fa fa-arrow-down"></i>
         </a>
       </div>
     </div>
   </section>
-  <section class="home-roadsigns">
+  <section class="home-roadsigns" id="btnscr-2h">
     <div class="container">
       <div class="col-xs-12 col-sm-6 col-md-push-6">
         <img class="hidden-xs roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/collision-incidents.png" alt="Collision Incidents" />
@@ -121,13 +121,13 @@
           <span>CYCLIST COLLISIONS</span></span><br>
           WERE REPORTED TO TORONTO POLICE IN 2016
         </div>
-        <a href="#" class="scroll-down">
+        <a href="#" class="scrollDown" id="btnscr-3">
           <i class="fa fa-arrow-down"></i>
         </a>
       </div>
     </div>
   </section>
-  <section class="home-roadsigns">
+  <section class="home-roadsigns" id="btnscr-3h">
     <div class="container">
       <div class="col-xs-12 col-sm-6">
         <img class="hidden-xs roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/pothole-incidents.png" alt="Dooring Incidents" />
@@ -164,13 +164,13 @@
             DON’T HAVE BIKE LANES
           </p>
         </div>
-        <a href="#" class="scroll-down">
+        <a href="#" class="scrollDown" id="btnscr-4">
           <i class="fa fa-arrow-down"></i>
         </a>
       </div>
     </div>
   </section>
-  <section class="home-roadsigns">
+  <section class="home-roadsigns" id="btnscr-4h">
     <div class="container">
       <div class="col-xs-12 col-sm-6 col-md-push-6">
         <img class="hidden-xs roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/roadwork-incidents.png" alt="Road Work Incidents" />
@@ -206,7 +206,7 @@
           OF BIKE LANES HAVE BEEN BUILT<br>
           IN TORONTO SINCE 1971
         </div>
-        <a href="#" class="scroll-up">
+        <a href="#" class="scroll-up" id="backToTop">
           <i class="fa fa-arrow-up"></i>
         </a>
       </div>
