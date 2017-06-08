@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     },
 
     sass: {
-      dev: {
+      dev: { 
         files: {
           'css/obia.css': 'sass/styles.scss'
         }
@@ -44,6 +44,9 @@ cssmin: {
         files: ['sass/*.scss'],
         tasks: ['sass']
       }
+    },
+    sync: {
+      target: {}   // <= needs to be defined
     }
   });
 

@@ -1,33 +1,13 @@
 .welcome-main {
-  background: url(../img/road-safety-revolution.png) no-repeat center center fixed;
+  background: url(../img/road-safety-revolution.png) no-repeat center center fixed #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  min-height: 600px;
   .container {
     position: relative;
     height: 100%;
-    .scroll-down {
-      position: absolute;
-      background-color: $yellow;
-      width: 85px;
-      height: 85px;
-      text-align: center;
-      border-radius: 100%;
-      font-size: 52px;
-      line-height: 85px;
-      padding-top: 4px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      bottom: 45px;
-      display: block;
-      cursor: pointer;
-      i {
-        cursor: pointer;
-      }
-    }
     .win-a-bike {
       float: right;
       width: 380px;
@@ -65,6 +45,9 @@
   }
   .right {
     height: 100%;
+    img {
+      width: 100%;
+    }
   }
   form {
     p {
@@ -87,10 +70,148 @@
     }
   }
   #terms {
-    color: rgba(255,255,255,0.6);
-    line-height: 20px;
+    color: rgba($white, 0.6);
+    line-height: 21px;
     font-size: 13.5px;
     padding-top: 10px;
+  }
+  #sponsors {
+    width: 100%;
+    padding: 29px 0;
+  }
+}
+// home page road signs
+.home-roadsigns {
+  color: $black;
+  .container > .col-sm-6 {
+    min-height: 400px;
+  }
+  h3 {
+    @include condensedFont;
+    font-size: 100px;
+    margin-top: 110px;
+  }
+  p {
+    font-size: 19px;
+    padding-right: 95px;
+  }
+  .slogan {
+    padding: 23px 0;
+    font-size: 21px;
+    margin: 15px 0 65px;
+  }
+  .roadsign {
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    &.left {
+      left: 0%;
+    }
+    &.right {
+      right: 0%;
+    }
+  }
+}
+.home-roadbg {
+  position: relative;
+  .home-roadbg-pic {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+    &.bigger {
+      min-height: 800px;
+    }
+    &.dooring-bg {
+      background: url(../img/road-safety-sign-1.png) no-repeat center center fixed;
+    }
+    &.collisions-bg {
+      background: url(../img/road-safety-sign-2.png) no-repeat center center fixed;
+    }
+    &.potholes-bg {
+      background: url(../img/road-safety-sign-3.png) no-repeat center center fixed;
+    }
+    &.roadwork-bg {
+      background: url(../img/road-safety-sign-4.png) no-repeat center center fixed;
+    }
+  }
+  .roadsign-text {
+    @include condensedFont;
+    @include hAllign;
+    border: 10px solid $white;
+    position: absolute;
+    margin: auto;
+    bottom: 160px;
+    text-align: center;
+    color: $white;
+    -webkit-text-shadow: 1px 2px  8px rgba($black, 0.65);
+    -moz-text-shadow: 1px 2px  8px rgba($black, 0.65);
+    text-shadow: 1px 2px  8px rgba($black, 0.65);
+    -webkit-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
+    -moz-box-shadow: 0px 0px 12px 2px rgba($black,0.55);
+    box-shadow: 0px 0px 12px 2px rgba($black,0.55);
+    padding: 25px 65px;
+    min-width: 960px;
+    &.type-1, &.type-3 {
+      font-size: 47px;
+      span {
+        font-size: 160px;
+        display: inline-block;
+        margin: -50px 0 -25px;
+      }
+    }
+    &.type-3 {
+      span {
+        float: left;
+      }
+      p {
+        text-align: left;
+        display: inline-block;
+        font-size: 49px;
+        line-height: 51px;
+        padding-top: 31px;
+        margin-left: -20px;
+      }
+    }
+    &.type-2{
+      span {
+        font-size: 128px;
+        line-height: 90px;
+        span {
+          font-size: 75px;
+          display: block;
+          margin-bottom: -118px;
+        }
+      }
+      font-size: 42px;
+      padding-top: 3%;
+    }
+    &.type-4{
+      span {
+        font-size: 155px;
+        display: inline-block;
+        line-height: 160px;
+      }
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+  .scroll-down {
+    bottom: 20px;
+  }
+}
+.submit-story {
+  background-color: $yellow;
+  text-align: center;
+  @include condensedFont;
+  padding: 12px;
+  font-weight: bold;
+  a {
+    color: $black;
+    font-size: 35px;
+    text-transform: uppercase;
+
   }
 }
 
