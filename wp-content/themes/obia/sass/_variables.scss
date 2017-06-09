@@ -48,6 +48,11 @@ $lightFont: #58585a;
 .cf {
   clear: both !important;
 }
+#attach-picture {
+  opacity: 0;
+  z-index: -1000;
+  height: 0px;
+}
 
 // class Mixins
 .wpcf7-submit {
@@ -72,8 +77,6 @@ $lightFont: #58585a;
   font-size: 52px;
   line-height: 85px;
   padding-top: 4px;
-  left: 0;
-  right: 0;
   margin: auto;
   bottom: 45px;
   display: block;

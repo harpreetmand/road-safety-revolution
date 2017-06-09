@@ -11105,6 +11105,11 @@ img.tp-slider-alternative-image {
 .cf {
   clear: both !important; }
 
+#attach-picture {
+  opacity: 0;
+  z-index: -1000;
+  height: 0px; }
+
 .wpcf7-submit {
   background-color: #febe10;
   color: #000 !important;
@@ -11126,8 +11131,6 @@ img.tp-slider-alternative-image {
   font-size: 52px;
   line-height: 85px;
   padding-top: 4px;
-  left: 0;
-  right: 0;
   margin: auto;
   bottom: 45px;
   display: block;
@@ -13727,6 +13730,10 @@ footer .logos {
   -o-background-size: cover;
   background-size: cover;
   min-height: 600px; }
+  .welcome-main .scrollDown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
   .welcome-main .container {
     position: relative;
     height: 100%; }
@@ -13887,7 +13894,10 @@ footer .logos {
         font-size: 155px;
         display: inline-block;
         line-height: 160px; }
-  .home-roadbg .scrollDown {
+  .home-roadbg .scrollDown, .home-roadbg .scroll-up {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 20px; }
 
 .submit-story {
@@ -14237,7 +14247,7 @@ footer .logos {
   .welcome-bikeLaw .bikeLawFaq .faqBlack {
     background-color: #000;
     color: #fff; }
-    .welcome-bikeLaw .bikeLawFaq .faqBlack .font100 {
+    .welcome-bikeLaw .bikeLawFaq .faqBlack .font120 {
       padding: 50px 70px; }
   .welcome-bikeLaw .bikeLawFaq .flex-item {
     width: 50%;
@@ -14259,9 +14269,10 @@ footer .logos {
 .carousel-indicators li {
   visibility: hidden; }
 
-.font100 {
-  font-size: 100px;
-  line-height: 1;
+.font120 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 120px;
+  line-height: 111px;
   font-weight: 900; }
 
 @media (max-width: 767px) {
@@ -14295,7 +14306,7 @@ footer .logos {
   .welcome-bikeLaw .bikeLawFaq .flex-item {
     width: 100%; } }
 @media (max-width: 400px) {
-  .font100 {
+  .font120 {
     font-size: 60px; } }
 .welcome-blog .top {
   display: flex;
@@ -14406,5 +14417,72 @@ footer .logos {
   .welcome-single-blog .blogsAll .blogsBody iframe {
     width: 100%;
     float: none; } }
+.bikeForum .bigFont {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 72px; }
+.bikeForum .medFont {
+  font-size: 19px; }
+.bikeForum .welcome-bikeForum .top {
+  display: flex;
+  position: relative; }
+  .bikeForum .welcome-bikeForum .top .flex-item {
+    width: 50%;
+    position: relative; }
+    .bikeForum .welcome-bikeForum .top .flex-item .bgImage {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 15px;
+      margin: 0 auto; }
+  .bikeForum .welcome-bikeForum .top .scrollDown {
+    font-size: 50px;
+    background: #febe10;
+    border-radius: 180px;
+    padding: 0px 14px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; }
+.bikeForum .welcome-bikeForum .font120 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 900; }
+.bikeForum .share-your-story {
+  background-color: #231f20;
+  color: #fff;
+  padding: 45px 0; }
+  .bikeForum .share-your-story form {
+    color: #58585a; }
+  .bikeForum .share-your-story .giftcard {
+    font-family: "frutiger_lt_std45_light";
+    font-size: 32px;
+    display: block;
+    color: #febe10;
+    margin-top: -28px; }
+
+@media (max-width: 767px) {
+  .welcome-bikeForum .top {
+    display: flex; }
+    .welcome-bikeForum .top .flex-item {
+      width: 100%;
+      background: url("../img/bike-law-girl-on-bike.jpg") no-repeat fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover cover;
+      background-position: 30% 24%;
+      /* height: 100%; */
+      display: flex; }
+      .welcome-bikeForum .top .flex-item .bgImage {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.7); } }
+@media (max-width: 992px) {
+  .welcome-bikeForum .bikeForumFaq .flex-item {
+    width: 100%; } }
+@media (max-width: 400px) {
+  .font120 {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 60px; } }
 
 /*# sourceMappingURL=obia.css.map */

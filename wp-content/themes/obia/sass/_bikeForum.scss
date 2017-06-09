@@ -1,0 +1,103 @@
+.bikeForum {
+  .bigFont {
+    @include condensedFont;
+    font-size: 72px;
+  }
+  .medFont {
+    font-size: 19px;
+  }
+  .welcome-bikeForum {
+    .top {
+      display: flex;
+      position: relative;
+      .flex-item {
+        width: 50%;
+        position: relative;
+        .bgImage {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 15px;
+          margin: 0 auto;
+        }
+      }
+      .scrollDown {
+        @include scrollDown;
+        @include hAllign;
+        bottom: 10px;
+      }
+    }
+    .font120 {
+      @include condensedFont;
+      font-size: 120px;
+      line-height: 1;
+      font-weight: 900;
+    }
+  }
+  .share-your-story {
+    background-color: $fontColor;
+    color: $white;
+    padding: 45px 0;
+    form {
+      color: $lightFont;
+    }
+    .giftcard {
+      font-family: "frutiger_lt_std45_light";
+      font-size: 32px;
+      display: block;
+      color: #febe10;
+      margin-top: -28px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .welcome-bikeForum {
+    .top {
+      display: flex;
+      .flex-item {
+        width: 100%;
+        background: url("../img/bike-law-girl-on-bike.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover cover;
+        background-position: 30% 24%;
+        /* height: 100%; */
+        display: flex;
+        .bgImage {
+          position: relative;
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .welcome-bikeForum .bikeForumFaq .flex-item {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .font120 {
+    @include condensedFont;
+    font-size: 60px;
+  }
+}
+//     background: url(../img/bike-law-girl-on-bike.jpg) no-repeat center center fixed;
+// -webkit-background-size: cover;
+// -moz-background-size: cover;
+// -o-background-size: cover;
+// background-size: cover;
+// height: 100%;
+// display: flex;
+// @media (min-width: 1750px) {
+//     .welcome-bikeForum .bikeForumFaq .bgImage{
+//         background: url(../img/bike-law-faq.jpg) no-repeat center center fixed;
+//         -webkit-background-size: contain;
+//         -moz-background-size: cover;
+//         -o-background-size: cover;
+//         background-size: 36%;
+//         background-position: 400px 0%;
+//         height: 800px
+//     }
+// }

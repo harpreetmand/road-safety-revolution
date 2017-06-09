@@ -4,7 +4,7 @@
     <div class="top marb20">
         <div class="flex-item">
             <div class="bgImage">
-                <div class="font100">
+                <div class="font120">
                     BIKE SAFETY BLOG
                 </div>
                 <p>Keep up-to-date on all the news, events and cycling laws in Ontario.</p>

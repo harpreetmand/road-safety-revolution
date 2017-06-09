@@ -2,6 +2,7 @@
   $(window).resize(function() {
     mainBg();
     bgDivImage();
+    console.log('test');
   });
 	$(function () {
 		'use strict';
@@ -31,7 +32,7 @@
 
     var w = parseInt(window.outerWidth);
 
-    if (document.getElementById('homePEnter') == null) {
+    if (document.getElementById('bikeLaw') !== null) {
       var width = parseInt(document.getElementById('bikeLaw').offsetWidth);
       var x = ((parseInt(w)-parseInt(width)) /2);
       if(w >= 1200){
@@ -39,9 +40,10 @@
       }else if(w <1200){
         pImage.style.backgroundSize = (width/2)+50+"px";
       }else if(w <=992){
-
       }
-    } else {
+      pImage = document.getElementById("pImage");
+      pImage.style.backgroundPosition = x+"px,0px"
+    } else if (document.getElementById('homePEnter') !== null){
       var width = parseInt(document.getElementById('homePEnter').offsetWidth);
       var x = parseInt(w)/2;
       if(w < 1200){
@@ -49,9 +51,9 @@
       }else if(w <=992){
         pImage.style.backgroundSize = (width/2)+250+"px";
       }
+      pImage = document.getElementById("pImage");
+      pImage.style.backgroundPosition = x+"px,0px"
     }
-    pImage = document.getElementById("pImage");
-    pImage.style.backgroundPosition = x+"px,0px"
   }
   function getThumbnail(name){
       var image = new Image();

@@ -4,7 +4,7 @@
     <div class="top marb20">
         <div class="flex-item">
             <div class="bgImage">
-                <div class="font100">
+                <div class="font120">
                     BIKE LAW & TIPS
                 </div>
                 <p>If you find yourself in a serious bicycle accident here are some initial steps you should follow:</p>
@@ -67,7 +67,7 @@
                 BIKE LAW FAQ
             </div>
         </div>
-        
+
         <div class="yellowBack condensedFont"><strong>I don’t have insurance, can I still make a claim?</strong></div>
         <p>Yes, in many cases, you can claim against the insurance company of the vehicle that struck you. You may also access the SABS (Statutory Accident Benefits Schedule) of the motor vehicle that struck you.</p>
         <div class="yellowBack condensedFont"><strong>It was a hit-and-run, can I still start a lawsuit?</strong></div>
@@ -79,7 +79,7 @@
         <div class="yellowBack condensedFont"><strong>A car caused the accident, but I did not hit the car, I hit another obstacle, can I start a lawsuit?</strong></div>
         <p>Yes. If a driver causes an accident, even if the actual collision is with an object other than their car, they may be held liable.</p>
 
-        
+
     </div>
 </div>
 <div class="cf"></div>
