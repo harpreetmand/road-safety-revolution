@@ -258,8 +258,13 @@ a{
 .box{
      border: thin solid red;
 }
+.link{
+    color: $fontColor;
+    text-decoration: underline;
+}
 @import 'header';
 @import 'homepage';
 @import 'bikeLaw';
 @import 'bikeBlog';
 @import 'bikeForum';
+@import 'askAdam';

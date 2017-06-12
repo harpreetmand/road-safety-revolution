@@ -1,0 +1,60 @@
+.welcome-askAdam{
+    .adamPic{
+        width: 360px;
+  
+    }
+    .scrollDown{
+        bottom: auto;
+        @include hAllign;
+        left: 38%;
+        margin-top: 30px;
+    }
+    .askAdamBottom{
+        display: -webkit-box;
+        display: box;
+        background-color: $black;
+            .full{
+                padding: 30px;
+                .askAdamFormLine{
+                    color: $white;
+                    font-size: 20px;
+                }
+
+                form.pages{
+                    margin-top: 0px;
+                    
+
+                    label{
+                        width: 100%;
+                    }
+                    #req{
+                        color: $white;
+                        font-size: 12px;
+                        line-height: .6;
+                    }
+                }
+            }
+                            img{
+                    margin-top: 20px;
+                }
+        }
+}
+
+    @media (max-width: 992px) {
+        .welcome-askAdam{
+            .adamPic{
+                width: 360px;
+            }
+            .font120{
+                position: absolute;
+                margin-top: -130px;
+                z-index: -10;
+            }
+            .aboutAdam{
+                margin-top: 160px;
+            }
+            .scrollDown{
+                display: none;
+            }
+        }
+    }
