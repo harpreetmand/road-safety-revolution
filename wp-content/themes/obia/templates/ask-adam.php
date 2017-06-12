@@ -4,7 +4,7 @@
       <div class="askAdamTop">
         <picture>
             <source media="(min-width: 735px)" srcset="<?php echo get_template_directory_uri(); ?>/img/ask-adam-thomson-rogers.jpg" alt="ask adam">
-            <source media="(min-width: 465px)" srcset="<?php echo get_template_directory_uri(); ?>/img/ask-adam-top-thomson-rogers.jpg" alt="ask adam">
+
             <img src="<?php echo get_template_directory_uri(); ?>/img/ask-adam-top-thomson-rogers.jpg" alt="Flowers" class="pull-right adamPic">
         </picture>
 

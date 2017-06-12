@@ -103,34 +103,7 @@ $lightFont: #58585a;
     cursor: pointer;
   }
 }
-<<<<<<< HEAD
 
-form.pages {
-  color: $lightFont;
-  margin-top: 25px;
-  select {
-    min-width: 220px;
-    background: #FFF url(../img/down-arrow.png) no-repeat;
-    background-size: 12px;
-    background-position-x: 93%;
-    background-position-y: 11px;
-  }
-  select, input {
-    height: 32px;
-    border-radius: 0px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-  select, input, textarea {
-    padding: 0 8px;
-    border-style: none;
-  }
-  label, input, textarea {
-    width: 100%;
-  }
-}
-=======
 form.pages{
   color: $lightFont;
   margin-top: 25px;
@@ -156,4 +129,3 @@ form.pages{
   width: 100%;
 }
 }
->>>>>>> ad5da1d727ec8d98afb4251f346b0c075674c017
