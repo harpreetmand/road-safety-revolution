@@ -13,13 +13,13 @@
 
 <ul id="forums-list-<?php bbp_forum_id(); ?>" class="bbp-forums">
 
-	<li class="bbp-header">
+	<!-- <li class="bbp-header">
 
 		<ul class="forum-titles">
-			<li class="bbp-forum-info"><?php _e( 'Forum', 'bbpress' ); ?></li>
-			<li class="bbp-forum-topic-count"><?php _e( 'Topics', 'bbpress' ); ?></li>
-			<li class="bbp-forum-reply-count"><?php bbp_show_lead_topic() ? _e( 'Replies', 'bbpress' ) : _e( 'Posts', 'bbpress' ); ?></li>
-			<li class="bbp-forum-freshness"><?php _e( 'Freshness', 'bbpress' ); ?></li>
+			<li class="bbp-forum-info"></?php _e( 'Forum', 'bbpress' ); ?></li>
+			<li class="bbp-forum-topic-count"></?php _e( 'Topics', 'bbpress' ); ?></li>
+			<li class="bbp-forum-reply-count"></?php bbp_show_lead_topic() ? _e( 'Replies', 'bbpress' ) : _e( 'Posts', 'bbpress' ); ?></li>
+			<li class="bbp-forum-freshness"></?php _e( 'Freshness', 'bbpress' ); ?></li>
 		</ul>
 
 	</li><!-- .bbp-header -->
@@ -37,7 +37,10 @@
 	<li class="bbp-footer">
 
 		<div class="tr">
-			<p class="td colspan4">&nbsp;</p>
+			<p class="padlr30 text-left">
+				We kindly ask that all submissions are profanity-free, and each submission is reviewed prior to being posted.<br>
+				Those found to have profane language will not be posted, or may be modified to remove such language.
+			</p>
 		</div><!-- .tr -->
 
 	</li><!-- .bbp-footer -->

@@ -22,6 +22,9 @@ $lightFont: #58585a;
 .mar0 {
   margin: 0px !important;
 }
+.marb10 {
+  margin-bottom: 10px !important;
+}
 .marb20 {
   margin-bottom: 20px !important;
 }
@@ -41,6 +44,21 @@ $lightFont: #58585a;
 }
 .col-xs-12.right {
   padding-right: 0px !important;
+}
+
+.font120 {
+  @include condensedFont;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 900;
+  color: $fontColor;
+}
+.font70 {
+  @include condensedFont;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 900;
+  color: $fontColor;
 }
 
 
@@ -83,5 +101,31 @@ $lightFont: #58585a;
   cursor: pointer;
   i {
     cursor: pointer;
+  }
+}
+
+form.pages {
+  color: $lightFont;
+  margin-top: 25px;
+  select {
+    min-width: 220px;
+    background: #FFF url(../img/down-arrow.png) no-repeat;
+    background-size: 12px;
+    background-position-x: 93%;
+    background-position-y: 11px;
+  }
+  select, input {
+    height: 32px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  select, input, textarea {
+    padding: 0 8px;
+    border-style: none;
+  }
+  label, input, textarea {
+    width: 100%;
   }
 }

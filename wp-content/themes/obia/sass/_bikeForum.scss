@@ -27,26 +27,55 @@
         bottom: 10px;
       }
     }
-    .font120 {
-      @include condensedFont;
-      font-size: 120px;
-      line-height: 1;
-      font-weight: 900;
-    }
   }
   .share-your-story {
     background-color: $fontColor;
     color: $white;
     padding: 45px 0;
-    form {
-      color: $lightFont;
-    }
+    position: relative;
     .giftcard {
       font-family: "frutiger_lt_std45_light";
       font-size: 32px;
       display: block;
       color: #febe10;
       margin-top: -28px;
+    }
+    .col-md-5.nopadr > img {
+      position: absolute;
+      width: 100%;
+      top: -120px;
+    }
+  }
+  .forum {
+    .container {
+      z-index: 1000;
+      position: relative;
+      background-color: #FFF;
+    }
+    a, p {
+      color: $fontColor;
+    }
+    .title {
+      padding: 45px 0px;
+    }
+    .bbp-forum-info {
+      a {
+        i {
+          font-size: 20px;
+        }
+        display: inline-block;
+        font-size: 19px;
+        font-weight: 700;
+        padding-top: 5px;
+        padding-left: 5px;
+        @include condensedFont;
+      }
+    }
+  }
+  .forum-topic {
+    text-transform: uppercase;
+    .bbp-topics {
+      
     }
   }
 }

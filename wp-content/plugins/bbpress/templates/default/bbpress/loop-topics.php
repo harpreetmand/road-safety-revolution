@@ -13,7 +13,7 @@
 
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="bbp-topics">
 
-	<li class="bbp-header">
+	<!-- <li class="bbp-header">
 
 		<ul class="forum-titles">
 			<li class="bbp-topic-title"><?php _e( 'Topic', 'bbpress' ); ?></li>
@@ -22,7 +22,7 @@
 			<li class="bbp-topic-freshness"><?php _e( 'Freshness', 'bbpress' ); ?></li>
 		</ul>
 
-	</li>
+	</li> -->
 
 	<li class="bbp-body">
 

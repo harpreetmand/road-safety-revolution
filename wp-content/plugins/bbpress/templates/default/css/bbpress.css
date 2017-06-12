@@ -15,9 +15,9 @@
 #bbpress-forums {
 	background: transparent;
 	clear: both;
-	margin-bottom: 20px;
 	overflow: hidden;
 	font-size: 12px;
+	margin-bottom: -35px;
 }
 
 #bbpress-forums div.even,
@@ -27,7 +27,7 @@
 
 #bbpress-forums div.odd,
 #bbpress-forums ul.odd {
-	background-color: #fbfbfb;
+	background-color: #febe10;
 }
 
 body.reply-edit .reply {
@@ -83,8 +83,6 @@ body.reply-edit .reply {
 #bbpress-forums ul.bbp-search-results {
 	font-size: 12px;
 	overflow: hidden;
-	border: 1px solid #eee;
-	margin-bottom: 20px;
 	clear: both;
 }
 
@@ -96,11 +94,10 @@ body.reply-edit .reply {
 
 #bbpress-forums li.bbp-header,
 #bbpress-forums li.bbp-footer {
-	background: #f3f3f3;
-	border-top: 1px solid #eee;
 	font-weight: bold;
 	padding: 8px;
 	text-align: center;
+	margin-top: 10px;
 }
 
 #bbpress-forums li.bbp-header {
@@ -124,14 +121,15 @@ body.reply-edit .reply {
 
 #bbpress-forums li.bbp-footer p {
 	margin: 0;
-	line-height: 1em;
+	font-size: 14px;
+	line-height: 19px;
 }
 
 li.bbp-forum-info,
 li.bbp-topic-title {
 	float: left;
 	text-align: left;
-	width: 55%;
+	width: 80%;
 }
 li.bbp-forum-topic-count,
 li.bbp-topic-voice-count,
@@ -140,6 +138,16 @@ li.bbp-topic-reply-count {
 	float: left;
 	text-align: center;
 	width: 10%;
+	font-size: 18px;
+	line-height: 42px;
+	height: 42px;
+}
+
+li.bbp-forum-topic-count img,
+li.bbp-topic-voice-count img,
+li.bbp-forum-reply-count img,
+li.bbp-topic-reply-count img {
+	height: 26px;
 }
 
 li.bbp-forum-freshness,
@@ -151,7 +159,6 @@ li.bbp-topic-freshness {
 
 #bbpress-forums li.bbp-body ul.forum,
 #bbpress-forums li.bbp-body ul.topic {
-	border-top: 1px solid #eee;
 	overflow: hidden;
 	padding: 8px;
 }
@@ -552,6 +559,7 @@ td.bbp-topic-counts {
 .bbp-pagination-count {
 	float: left;
 	border: 1px solid transparent;
+	display: none;
 }
 
 .bbp-pagination-links {

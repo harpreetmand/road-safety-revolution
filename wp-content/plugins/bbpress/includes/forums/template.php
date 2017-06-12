@@ -2030,7 +2030,7 @@ function bbp_single_forum_description( $args = '' ) {
 		add_filter( 'bbp_get_forum_permalink', 'bbp_add_view_all' );
 
 		// Combine the elements together
-		$retstr = $r['before'] . $retstr . $r['after'];
+		$retstr = "";
 
 		// Return filtered result
 		return apply_filters( 'bbp_get_single_forum_description', $retstr, $r );
@@ -2225,7 +2225,7 @@ function bbp_form_forum_visibility() {
 
 		return apply_filters( 'bbp_get_form_forum_visibility', esc_attr( $forum_visibility ) );
 	}
-	
+
 /**
  * Output checked value of forum subscription
  *

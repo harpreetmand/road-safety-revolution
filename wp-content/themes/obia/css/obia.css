@@ -11085,6 +11085,9 @@ img.tp-slider-alternative-image {
 .mar0 {
   margin: 0px !important; }
 
+.marb10 {
+  margin-bottom: 10px !important; }
+
 .marb20 {
   margin-bottom: 20px !important; }
 
@@ -11101,6 +11104,20 @@ img.tp-slider-alternative-image {
 
 .col-xs-12.right {
   padding-right: 0px !important; }
+
+.font120 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 900;
+  color: #231f20; }
+
+.font70 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 900;
+  color: #231f20; }
 
 .cf {
   clear: both !important; }
@@ -11137,6 +11154,27 @@ img.tp-slider-alternative-image {
   cursor: pointer; }
   .scrollDown i, .scroll-up i {
     cursor: pointer; }
+
+form.pages {
+  color: #58585a;
+  margin-top: 25px; }
+  form.pages select {
+    min-width: 220px;
+    background: #FFF url(../img/down-arrow.png) no-repeat;
+    background-size: 12px;
+    background-position-x: 93%;
+    background-position-y: 11px; }
+  form.pages select, form.pages input {
+    height: 32px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  form.pages select, form.pages input, form.pages textarea {
+    padding: 0 8px;
+    border-style: none; }
+  form.pages label, form.pages input, form.pages textarea {
+    width: 100%; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -13504,6 +13542,16 @@ body {
 .nopadt {
   padding-top: 0px !important; }
 
+.padl30 {
+  padding-left: 30px !important; }
+
+.padr30 {
+  padding-right: 30px !important; }
+
+.padlr30 {
+  padding-left: 30px !important;
+  padding-right: 30px !important; }
+
 .nomargint {
   margin-top: 0px !important; }
 
@@ -14273,7 +14321,8 @@ footer .logos {
   font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 120px;
   line-height: 111px;
-  font-weight: 900; }
+  font-weight: 900;
+  color: #231f20; }
 
 @media (max-width: 767px) {
   .welcome-bikeLaw .top {
@@ -14443,23 +14492,40 @@ footer .logos {
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px; }
-.bikeForum .welcome-bikeForum .font120 {
-  font-family: "Arial Narrow", Arial, sans-serif;
-  font-size: 120px;
-  line-height: 1;
-  font-weight: 900; }
 .bikeForum .share-your-story {
   background-color: #231f20;
   color: #fff;
-  padding: 45px 0; }
-  .bikeForum .share-your-story form {
-    color: #58585a; }
+  padding: 45px 0;
+  position: relative; }
   .bikeForum .share-your-story .giftcard {
     font-family: "frutiger_lt_std45_light";
     font-size: 32px;
     display: block;
     color: #febe10;
     margin-top: -28px; }
+  .bikeForum .share-your-story .col-md-5.nopadr > img {
+    position: absolute;
+    width: 100%;
+    top: -120px; }
+.bikeForum .forum .container {
+  z-index: 1000;
+  position: relative;
+  background-color: #FFF; }
+.bikeForum .forum a, .bikeForum .forum p {
+  color: #231f20; }
+.bikeForum .forum .title {
+  padding: 45px 0px; }
+.bikeForum .forum .bbp-forum-info a {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-family: "Arial Narrow", Arial, sans-serif; }
+  .bikeForum .forum .bbp-forum-info a i {
+    font-size: 20px; }
+.bikeForum .forum-topic {
+  text-transform: uppercase; }
 
 @media (max-width: 767px) {
   .welcome-bikeForum .top {

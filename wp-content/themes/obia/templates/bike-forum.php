@@ -1,7 +1,6 @@
-<?php /* Template Name: Bike forum Template */ get_header(); ?>
 <main role="main" class="bikeForum">
   <section class="welcome-bikeForum container" id="bikeForum">
-    <div class="top marb20">
+    <div class="top marb10">
         <div class="flex-item">
             <div class="bgImage">
                 <div class="font120">
@@ -21,7 +20,7 @@
   </section>
   <section class="share-your-story">
     <div class="container">
-      <div class="col-xs-12 col-md-8">
+      <div class="col-xs-12 col-md-7 nopadl">
         <p class="bigFont">
           SHARE YOUR STORY
         </p>
@@ -39,13 +38,55 @@
           1 story per month from June – November.
         </div>
         <div class="cf"></div>
-        <?php echo do_shortcode('[contact-form-7 id="747" title="Win A Bike"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 html_class="pages" id="747" title="Win A Bike"]'); ?>
+        <?php echo do_shortcode('[bbp-topic-form]'); ?>
       </div>
-      <div class="col-xs-12 col-md-4">
-
+      <div class="col-xs-12 col-md-5 nopadr">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/join-the-revolution-today.png" alt="Join The Safety Revolution" />
       </div>
+			<div class="cf"></div>
     </div>
   </section>
+	<section class="forum">
+		<div class="container">
+      <div class="font70 title padlr30">
+          TOPICS
+      </div>
+			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+				<!-- article -->
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<?php the_content(); ?>
+
+					<?php comments_template( '', true ); // Remove if you don't want comments ?>
+
+					<br class="clear">
+
+					<?php edit_post_link(); ?>
+
+				</article>
+				<!-- /article -->
+
+			<?php endwhile; ?>
+
+			<?php else: ?>
+
+				<!-- article -->
+				<article>
+
+					<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+
+				</article>
+				<!-- /article -->
+
+			<?php endif; ?>
+
+      <?php
+      $post_7 = get_post(810);
+      $excerpt = $post_810->post_excerpt;
+      echo $excerpt
+       ?>
+		</div>
+	</section>
 </main>
-<!--</?php get_sidebar(); ?>-->
-<?php get_footer(); ?>
