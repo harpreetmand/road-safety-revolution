@@ -81,12 +81,7 @@
 				<!-- /article -->
 
 			<?php endif; ?>
-
-      <?php
-      $post_7 = get_post(810);
-      $excerpt = $post_810->post_excerpt;
-      echo $excerpt
-       ?>
+      <?php echo do_shortcode('[bbp-topic-form]'); ?>
 		</div>
 	</section>
 </main>
