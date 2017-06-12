@@ -11164,16 +11164,16 @@ form.pages {
     background-size: 12px;
     background-position-x: 93%;
     background-position-y: 11px; }
-  form.pages   select, form.pages input {
+  form.pages select, form.pages input {
     height: 32px;
     border-radius: 0px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
-  form.pages   select, form.pages input, form.pages textarea {
+  form.pages select, form.pages input, form.pages textarea {
     padding: 0 8px;
     border-style: none; }
-  form.pages   label, form.pages input, form.pages textarea {
+  form.pages label, form.pages input, form.pages textarea {
     width: 100%; }
 
 /*!
