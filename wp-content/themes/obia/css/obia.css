@@ -14549,5 +14549,14 @@ footer .logos {
     margin-top: 160px; }
   .welcome-askAdam .scrollDown {
     display: none; } }
+@media (max-width: 555px) {
+  .welcome-askAdam .font120 {
+    font-size: 70px;
+    min-width: 320px; }
+  .welcome-askAdam .adamPic {
+    width: 250px; } }
+@media (max-width: 400px) {
+  .welcome-askAdam .adamPic {
+    width: 100%; } }
 
 /*# sourceMappingURL=obia.css.map */

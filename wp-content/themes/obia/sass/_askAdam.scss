@@ -34,7 +34,7 @@
                     }
                 }
             }
-                            img{
+                 img{
                     margin-top: 20px;
                 }
         }
@@ -56,5 +56,26 @@
             .scrollDown{
                 display: none;
             }
+        }
+    }
+    @media (max-width: 555px) {
+        .welcome-askAdam{
+            .font120{
+                font-size: 70px;
+                min-width: 320px
+            }
+            .adamPic{
+                width: 250px;
+            }
+            
+        }
+    }
+    @media (max-width: 400px) {
+        .welcome-askAdam{
+
+            .adamPic{
+                width: 100%;
+            }
+            
         }
     }

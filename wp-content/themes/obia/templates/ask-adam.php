@@ -2,7 +2,12 @@
 <main role="main">
   <section class="welcome-askAdam container" id="bikeLaw">
       <div class="askAdamTop">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/ask-adam-thomson-rogers.jpg" class="pull-right adamPic" alt="ask adam"/>
+        <picture>
+            <source media="(min-width: 735px)" srcset="<?php echo get_template_directory_uri(); ?>/img/ask-adam-thomson-rogers.jpg" alt="ask adam">
+            <source media="(min-width: 465px)" srcset="<?php echo get_template_directory_uri(); ?>/img/ask-adam-top-thomson-rogers.jpg" alt="ask adam">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ask-adam-top-thomson-rogers.jpg" alt="Flowers" class="pull-right adamPic">
+        </picture>
+
         <div class="font120">ASK ADAM</div>
         <div class="aboutAdam">
             <p>Adam Tanel of Thomson, Rogers is an avid cyclist who knows the ins and outs of biking in Toronto and the law. Adam and Thomson, Rogers have advocated for the rights of cyclists in and out of the courtroom for years.</p>
