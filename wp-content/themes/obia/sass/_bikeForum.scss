@@ -167,6 +167,12 @@
           }
         }
       }
+      .bbp-no-topic {
+        color: #231f20;
+        .tml-user-login-wrap label, .tml-user-pass-wrap label {
+          color: #FFF;
+        }
+      }
     }
   }
 }
