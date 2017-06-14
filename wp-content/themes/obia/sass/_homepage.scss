@@ -431,6 +431,9 @@
       min-height: 700px;
     }
   }
+  .enter-to-win .container {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -454,6 +457,7 @@
       left: inherit !important;
       right: -13px !important;
       z-index: -7;
+
     }
     h3 {
       font-size: 47px;
@@ -477,7 +481,10 @@
       }
       &.type-3 span {
         font-size: 83px;
-        margin: 0px 7px -6px;
+        margin: 0px auto -6px;
+        left: 0;
+        right: 0;
+        width: 100%;
       }
       &.type-2 {
         font-size: 17px;
@@ -495,6 +502,7 @@
         font-size: 24px;
         margin-left: 4px;
         line-height: 31px;
+        padding-top: 0px;
       }
       &.type-4 {
         font-size: 26px;
@@ -518,7 +526,14 @@
   }
 }
 
+@media (max-width: 500px) {
+  .home-roadsigns {
+    .roadsign {
+      display: none;
 
+    }
+  }
+}
 @media (max-width: 400px) {
   .welcome-main .container .win-a-bike {
     width: 175px;

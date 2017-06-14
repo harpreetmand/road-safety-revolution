@@ -52,6 +52,7 @@
       z-index: 1000;
       position: relative;
       background-color: #FFF;
+      min-height: 500px;
     }
     a, p {
       color: $fontColor;
@@ -196,12 +197,14 @@
         .bgImage {
           position: relative;
           background-color: rgba(255, 255, 255, 0.7);
+          width: 100%;
+          height: 100%;
         }
       }
     }
   }
   .bikeForum .welcome-bikeForum .top {
-      min-height: 300px;
+      min-height: 128px;
       .flex-item {
         width: 100%;
       }
@@ -222,7 +225,7 @@
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .font120 {
     @include condensedFont;
     font-size: 55px;

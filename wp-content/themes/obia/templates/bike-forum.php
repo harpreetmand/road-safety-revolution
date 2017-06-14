@@ -4,7 +4,7 @@
         <div class="flex-item">
             <div class="bgImage">
                 <div class="font120">
-                    BIKE<br>
+                    BIKE<br class="hidden-xs">
                     FORUM
                 </div>
             </div>
