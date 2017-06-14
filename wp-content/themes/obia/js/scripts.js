@@ -1,23 +1,22 @@
 (function ($, root, undefined) {
-  $(window).resize(function() {
-    mainBg();
-    bgDivImage();
-    console.log('test');
-  });
 	$(function () {
 		'use strict';
 
-		// DOM ready, take it away
-		// if(document.getElementById('menu-item-87').classList.contains('active') || document.getElementById('menu-item-116').classList.contains('active') || document.getElementById('menu-item-134').classList.contains('active')){
-		// 	document.getElementById('menu-item-86').classList.add('active')
-		// }
-    mainBg();
-    bgDivImage();
+
+      if(document.getElementById("pImage") || document.getElementById("main-bg")){
+        $(window).resize(function() {
+          mainBg();
+          bgDivImage();
+      });
+      mainBg();
+      bgDivImage();
+      }
     parallex();
     buttonScroll();
 	});
 
   function mainBg(){
+    // console.log("mainbg");
     var domHeight = $(window).innerHeight()
     var navHeight = 175;
     var newHeight = domHeight - navHeight;
@@ -29,7 +28,9 @@
   }
 
   function bgDivImage() {
-
+    // console.log("bg imahe");
+    
+    pImage = document.getElementById("pImage");    
     var w = parseInt(window.outerWidth);
 
     if (document.getElementById('bikeLaw') !== null) {
@@ -41,7 +42,7 @@
         pImage.style.backgroundSize = (width/2)+50+"px";
       }else if(w <=992){
       }
-      pImage = document.getElementById("pImage");
+      
       pImage.style.backgroundPosition = x+"px,0px"
     } else if (document.getElementById('homePEnter') !== null){
       var width = parseInt(document.getElementById('homePEnter').offsetWidth);
@@ -51,7 +52,6 @@
       }else if(w <=992){
         pImage.style.backgroundSize = (width/2)+250+"px";
       }
-      pImage = document.getElementById("pImage");
       pImage.style.backgroundPosition = x+"px,0px"
     }
   }

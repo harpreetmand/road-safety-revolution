@@ -110,6 +110,7 @@
   .font120 {
     @include condensedFont;
     font-size: 60px;
+    line-height: 1;
   }
 }
 //     background: url(../img/bike-law-girl-on-bike.jpg) no-repeat center center fixed;

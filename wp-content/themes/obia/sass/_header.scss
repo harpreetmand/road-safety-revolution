@@ -1,5 +1,7 @@
 .yellow{
-    color: $yellow;
+    a{
+        color: $yellow;
+    }
 }
 a:hover{
     color: $white;
@@ -15,7 +17,6 @@ a:hover{
     color: $white;
     font-weight: 900;
 }
-
 .active:before{
       -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -41,6 +42,8 @@ a:hover{
         position: relative;
         top: 100px;
         font-size: 20px;
+        float: right;
+        margin-right: -15px;
         li{
             margin: 0px 10px;
             a{
@@ -48,6 +51,16 @@ a:hover{
             }
         }
     }
+}
+.navbar-default .navbar-toggle {
+    border-color: $yellow;
+    .icon-bar {
+        background-color: $yellow;
+    }   
+}
+.navbar-default .navbar-nav
+li:last-child{
+    margin-right: 0px;
 }
 .navbar-default .navbar-nav > li > a{
     color: $white;
@@ -76,6 +89,21 @@ a:hover{
         }
         
     }
+    .phoneContainer{
+       position: relative;
+    .phoneNumber{
+
+        color: $white;
+        z-index: 2;
+        text-align: right;
+        right: 0px;
+        position: absolute;
+        font-size: 30px;
+        line-height: 1;
+        margin-top: 46px;
+
+    }
+    }
   @media (max-width: 1200px) {
     .navbar .navbar-nav{
         font-size: 18px;
@@ -100,12 +128,21 @@ a:hover{
         font-size: 25px;
     }
     }
+    .phoneContainer{
+        .phoneNumber{
+            margin-top: 5px;
+        }
+    }
   }
     @media (max-width: 768px) {
         .navbar{
             .navbar-nav{
-                top: 40px;
+                top: 0px;
                 background-color: $black;
+                z-index: 11;
+                float: none;
+                border-top: thin solid $yellow;
+                border-bottom: thin solid $yellow;
             }
         }
         footer{
@@ -124,4 +161,14 @@ a:hover{
                     }
                 }
         }
+        .navbar-default .navbar-toggle{
+            margin-top: 50px;
+        }
+        .phoneContainer{
+            .phoneNumber{
+                font-size: 18px;
+            }
+        }
+  
+        
     }

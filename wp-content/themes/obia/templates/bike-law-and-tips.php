@@ -62,7 +62,7 @@
         <!--<img src="</?php echo get_template_directory_uri(); ?>/img/bike-law-faq.jpg" class="img-responsive"/>-->
     </div>
     <div class="flex-item">
-        <div class="faqBlack condensedFont marb20 ">
+        <div class="faqBlack condensedFont marb20">
             <div class="font100">
                 BIKE LAW FAQ
             </div>

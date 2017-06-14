@@ -31,10 +31,17 @@
 			<div class="headerImage">
 				<div class="overlay"></div>
 			</div>
+
 		    <!--</?php echo wp_nav_menu( 'nav-menu' ); ?>-->
             <nav class="navbar navbar-default marb7" role="navigation">
                 <div class="container">        
                 <div class="container-fluid">
+                    <div class="phoneContainer">
+                        <div class="phoneNumber">
+                            FOR INFO<br/>
+                            <span class="yellow"><a href="tel://1-877-565-8264">1-877-565-8264</a></span>
+                        </div>
+                    </div>
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-nav">
