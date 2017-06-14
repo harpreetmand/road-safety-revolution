@@ -1142,7 +1142,7 @@ function bbp_user_subscribe_link( $args = '', $user_id = 0, $wrap = true ) {
 		}
 
 		// Return the link
-		return apply_filters( 'bbp_get_user_subscribe_link', $html, $r, $user_id, $topic_id );
+		// return apply_filters( 'bbp_get_user_subscribe_link', $html, $r, $user_id, $topic_id );
 	}
 
 

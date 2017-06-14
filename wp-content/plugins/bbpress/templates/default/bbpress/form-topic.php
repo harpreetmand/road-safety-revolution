@@ -29,7 +29,7 @@
 
 	<div id="new-topic-<?php bbp_topic_id(); ?>" class="bbp-topic-form">
 
-		<form id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
+		<form class="" id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
 
 			<?php do_action( 'bbp_theme_before_topic_form' ); ?>
 
@@ -45,14 +45,6 @@
 
 				<?php endif; ?>
 
-				<?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
-
-					<div class="bbp-template-notice">
-						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
-					</div>
-
-				<?php endif; ?>
-
 				<?php do_action( 'bbp_template_notices' ); ?>
 
 				<div>
@@ -62,8 +54,7 @@
 					<?php do_action( 'bbp_theme_before_topic_form_title' ); ?>
 
 					<p>
-						<label for="bbp_topic_title"><?php printf( __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), bbp_get_title_max_length() ); ?></label><br />
-						<input type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" />
+						<input type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" placeholder="Title" />
 					</p>
 
 					<?php do_action( 'bbp_theme_after_topic_form_title' ); ?>
@@ -74,13 +65,13 @@
 
 					<?php do_action( 'bbp_theme_after_topic_form_content' ); ?>
 
-					<?php if ( !bbp_is_single_forum() ) : ?>
+					<!-- </?php if ( !bbp_is_single_forum() ) : ?>
 
-						<?php do_action( 'bbp_theme_before_topic_form_forum' ); ?>
+						</?php do_action( 'bbp_theme_before_topic_form_forum' ); ?>
 
 						<p>
-							<label for="bbp_forum_id"><?php _e( 'Forum:', 'bbpress' ); ?></label><br />
-							<?php
+							<label for="bbp_forum_id"></?php _e( 'Forum:', 'bbpress' ); ?></label><br />
+							</?php
 								bbp_dropdown( array(
 									'show_none' => __( '(No Forum)', 'bbpress' ),
 									'selected'  => bbp_get_form_topic_forum()
@@ -88,9 +79,9 @@
 							?>
 						</p>
 
-						<?php do_action( 'bbp_theme_after_topic_form_forum' ); ?>
+						</?php do_action( 'bbp_theme_after_topic_form_forum' ); ?>
 
-					<?php endif; ?>
+					</?php endif; ?> -->
 
 					<?php if ( bbp_allow_revisions() && bbp_is_topic_edit() ) : ?>
 
@@ -115,10 +106,9 @@
 					<?php do_action( 'bbp_theme_before_topic_form_submit_wrapper' ); ?>
 
 					<div class="bbp-submit-wrapper">
-
 						<?php do_action( 'bbp_theme_before_topic_form_submit_button' ); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit"><?php _e( 'SHARE', 'bbpress' ); ?></button>
 
 						<?php do_action( 'bbp_theme_after_topic_form_submit_button' ); ?>
 

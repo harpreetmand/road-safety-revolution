@@ -2116,7 +2116,7 @@ function bbp_reply_spam_link( $args = '' ) {
 		$uri      = wp_nonce_url( $uri, 'spam-reply_' . $reply->ID );
 		$retval   = $r['link_before'] . '<a href="' . esc_url( $uri ) . '" class="bbp-reply-spam-link">' . $display . '</a>' . $r['link_after'];
 
-		return apply_filters( 'bbp_get_reply_spam_link', $retval, $r );
+		// return apply_filters( 'bbp_get_reply_spam_link', $retval, $r );
 	}
 
 /**
@@ -2183,7 +2183,7 @@ function bbp_reply_move_link( $args = '' ) {
 
 		$retval = $r['link_before'] . '<a href="' . esc_url( $uri ) . '" title="' . $r['split_title'] . '" class="bbp-reply-move-link">' . $r['split_text'] . '</a>' . $r['link_after'];
 
-		return apply_filters( 'bbp_get_reply_move_link', $retval, $r );
+		// return apply_filters( 'bbp_get_reply_move_link', $retval, $r );
 	}
 
 /**
@@ -2250,7 +2250,7 @@ function bbp_topic_split_link( $args = '' ) {
 
 		$retval = $r['link_before'] . '<a href="' . esc_url( $uri ) . '" title="' . $r['split_title'] . '" class="bbp-topic-split-link">' . $r['split_text'] . '</a>' . $r['link_after'];
 
-		return apply_filters( 'bbp_get_topic_split_link', $retval, $r );
+		// return apply_filters( 'bbp_get_topic_split_link', $retval, $r );
 	}
 
 /**

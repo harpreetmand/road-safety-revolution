@@ -20,29 +20,29 @@
   </section>
   <section class="share-your-story">
     <div class="container">
-      <div class="col-xs-12 col-md-7 nopadl">
+      <div class="col-xs-12 col-md-8 col-lg-7 nopadl">
         <p class="bigFont">
           SHARE YOUR STORY
         </p>
         <p class="giftcard">
           For a chance to win a $50 Gears gift card
         </p>
-        <div class="col-xs-3 nopadl">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/share-your-story-with-us.png" alt="GEARS" />
+        <div class="col-xs-12 col-sm-3 nopadlr">
+          <img id="gear-forum" src="<?php echo get_template_directory_uri(); ?>/img/share-your-story-with-us.png" alt="GEARS" />
         </div>
-        <div class="col-xs-9 medFont">
-          Share a story where you’ve had a near miss,<br>
-          an accident or a moment of appreciation for a<br>
-          motorist and be entered for a chance to win a $50<br>
-          gift card to Gears Bike Shop. We will be rewarding<br>
+        <div class="col-xs-12 col-sm-9 medFont">
+          Share a story where you’ve had a near miss,<br class="hidden-xs">
+          an accident or a moment of appreciation for a<br class="hidden-xs">
+          motorist and be entered for a chance to win a $50<br class="hidden-xs">
+          gift card to Gears Bike Shop. We will be rewarding<br class="hidden-xs">
           1 story per month from June – November.
         </div>
         <div class="cf"></div>
-        <?php echo do_shortcode('[contact-form-7 html_class="pages" id="747" title="Win A Bike"]'); ?>
+        <!-- </?php echo do_shortcode('[contact-form-7 html_class="pages" id="747" title="Win A Bike"]'); ?> -->
         <?php echo do_shortcode('[bbp-topic-form]'); ?>
       </div>
-      <div class="col-xs-12 col-md-5 nopadr">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/join-the-revolution-today.png" alt="Join The Safety Revolution" />
+      <div class="col-xs-hidden col-sm-hidden col-md-4 col-lg-5 nopadr">
+        <img class="hidden-xs hidden-sm" src="<?php echo get_template_directory_uri(); ?>/img/join-the-revolution-today.png" alt="Join The Safety Revolution" />
       </div>
 			<div class="cf"></div>
     </div>
@@ -50,43 +50,9 @@
 	<section class="forum">
 		<div class="container">
       <div class="font70 title padlr30">
-          TOPICS
+          Accident Stories
       </div>
-			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-				<!-- article -->
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					<?php the_content(); ?>
-
-					<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-					<br class="clear">
-
-					<?php edit_post_link(); ?>
-
-				</article>
-				<!-- /article -->
-
-			<?php endwhile; ?>
-
-			<?php else: ?>
-
-				<!-- article -->
-				<article>
-
-					<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-				</article>
-				<!-- /article -->
-
-			<?php endif; ?>
-
-      <?php
-      $post_7 = get_post(810);
-      $excerpt = $post_810->post_excerpt;
-      echo $excerpt
-       ?>
+      <?php echo do_shortcode('[bbp-topic-index]'); ?>
 		</div>
 	</section>
 </main>

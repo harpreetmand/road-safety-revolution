@@ -11091,6 +11091,15 @@ img.tp-slider-alternative-image {
 .marb20 {
   margin-bottom: 20px !important; }
 
+.mart40 {
+  margin-top: 40px !important; }
+
+.goBack a {
+  color: #58585a;
+  font-size: 20px; }
+  .goBack a:hover {
+    color: #3f3f40; }
+
 .blackbg {
   background-color: #000 !important;
   color: #fff !important; }
@@ -11164,16 +11173,16 @@ form.pages {
     background-size: 12px;
     background-position-x: 93%;
     background-position-y: 11px; }
-  form.pages   select, form.pages input {
+  form.pages select, form.pages input {
     height: 32px;
     border-radius: 0px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
-  form.pages   select, form.pages input, form.pages textarea {
+  form.pages select, form.pages input, form.pages textarea {
     padding: 0 8px;
     border-style: none; }
-  form.pages   label, form.pages input, form.pages textarea {
+  form.pages label, form.pages input, form.pages textarea {
     width: 100%; }
 
 /*!
@@ -13539,6 +13548,10 @@ body {
 .nopadl {
   padding-left: 0px !important; }
 
+.nopadlr {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
 .nopadt {
   padding-top: 0px !important; }
 
@@ -13554,6 +13567,9 @@ body {
 
 .nomargint {
   margin-top: 0px !important; }
+
+footer {
+  margin-top: 30px; }
 
 /**    MIXINS    **/
 /* Rectangle In */
@@ -13712,7 +13728,8 @@ a:hover {
 
 .navbar {
   background-color: #000;
-  height: 150px; }
+  height: 150px;
+  z-index: 1000000000000000000000000; }
   .navbar .navbar-brand {
     font-size: 40px;
     line-height: 1;
@@ -14360,6 +14377,13 @@ footer .logos {
 .carousel-indicators li {
   visibility: hidden; }
 
+@media (max-width: 992px) {
+  .font120 {
+    font-size: 75px;
+    line-height: 66px; }
+
+  .welcome-bikeLaw .bikeLawFaq .flex-item {
+    width: 100%; } }
 @media (max-width: 767px) {
   .welcome-bikeLaw .top {
     display: flex; }
@@ -14387,9 +14411,6 @@ footer .logos {
     width: 80%; }
     .welcome-bikeLaw .carousel .carousel-inner .font {
       font-size: 20px; } }
-@media (max-width: 992px) {
-  .welcome-bikeLaw .bikeLawFaq .flex-item {
-    width: 100%; } }
 @media (max-width: 500px) {
   .welcome-bikeLaw .bikeLawFaq .faqBlack .font100 {
     font-size: 38px; } }
@@ -14446,9 +14467,6 @@ footer .logos {
       font-size: 30px;
       padding: 10px 14px; }
 
-.welcome-single-blog .goBack a {
-  color: #58585a;
-  font-size: 20px; }
 .welcome-single-blog .blogImage {
   height: 350px;
   overflow: hidden; }
@@ -14532,14 +14550,15 @@ footer .logos {
   background-color: #231f20;
   color: #fff;
   padding: 45px 0;
-  position: relative; }
+  position: relative;
+  min-height: 500px; }
   .bikeForum .share-your-story .giftcard {
     font-family: "frutiger_lt_std45_light";
     font-size: 32px;
     display: block;
     color: #febe10;
     margin-top: -28px; }
-  .bikeForum .share-your-story .col-md-5.nopadr > img {
+  .bikeForum .share-your-story .col-md-4.nopadr > img {
     position: absolute;
     width: 100%;
     top: -120px; }
@@ -14550,7 +14569,7 @@ footer .logos {
 .bikeForum .forum a, .bikeForum .forum p {
   color: #231f20; }
 .bikeForum .forum .title {
-  padding: 45px 0px; }
+  padding: 50px 0px 20px; }
 .bikeForum .forum .bbp-forum-info a {
   display: inline-block;
   font-size: 19px;
@@ -14562,7 +14581,79 @@ footer .logos {
     font-size: 20px; }
 .bikeForum .forum-topic {
   text-transform: uppercase; }
+.bikeForum .bbp-topic-permalink {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  display: block;
+  margin-bottom: -8px; }
+.bikeForum .bbp-topic-meta {
+  font-size: 16px !important; }
+.bikeForum .bbp-topic-title .bbp-author-avatar {
+  display: none; }
+.bikeForum .count {
+  font-size: 15px;
+  line-height: 21px;
+  float: left;
+  text-align: left;
+  width: 8%;
+  padding: 4px 0px; }
+.bikeForum .author-details {
+  width: 22%;
+  float: left;
+  text-align: left;
+  padding: 4px 0px; }
+  .bikeForum .author-details img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px; }
+  .bikeForum .author-details .bbp-author-name {
+    display: none; }
+  .bikeForum .author-details .bbp-topic-started-by {
+    float: left;
+    margin-right: 5px; }
+  .bikeForum .author-details .author {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 2px 0; }
+    .bikeForum .author-details .author span {
+      font-weight: 300;
+      font-size: 14px; }
+.bikeForum #bbpress-forums #bbp_topic_title {
+  height: 32px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+  color: #58585a;
+  max-width: 220px;
+  margin-bottom: 0px; }
+.bikeForum .forum-post .font70.title {
+  text-align: center; }
+.bikeForum .forum-post #bbpress-forums li.bbp-header {
+  font-size: 16px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 30px 0 12px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  background-color: #febe10; }
+  .bikeForum .forum-post #bbpress-forums li.bbp-header span {
+    font-weight: 300; }
+.bikeForum .forum-post #bbpress-forums li.bbp-body .odd {
+  background-color: #ececec !important; }
 
+@media (max-width: 1200px) {
+  .bikeForum .share-your-story .col-md-4.nopadr > img {
+    top: 5px; } }
+@media (max-width: 992px) {
+  .welcome-bikeForum .bikeForumFaq .flex-item {
+    width: 100%; } }
 @media (max-width: 767px) {
   .welcome-bikeForum .top {
     display: flex; }
@@ -14578,15 +14669,64 @@ footer .logos {
       display: flex; }
       .welcome-bikeForum .top .flex-item .bgImage {
         position: relative;
-        background-color: rgba(255, 255, 255, 0.7); } }
-@media (max-width: 992px) {
-  .welcome-bikeForum .bikeForumFaq .flex-item {
-    width: 100%; } }
+        background-color: rgba(255, 255, 255, 0.7); }
+
+  .bikeForum .welcome-bikeForum .top {
+    min-height: 300px; }
+    .bikeForum .welcome-bikeForum .top .flex-item {
+      width: 100%; }
+
+  .bikeForum .bigFont {
+    font-size: 50px;
+    margin-bottom: 16px; }
+
+  .bikeForum .share-your-story .giftcard {
+    font-size: 24px; }
+
+  .bikeForum .count {
+    width: 100% !important; } }
+@media (max-width: 620px) {
+  .bikeForum .author-details {
+    display: none; } }
 @media (max-width: 400px) {
   .font120 {
     font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 60px;
-    line-height: 1; } }
+    font-size: 55px;
+    line-height: 53px; }
+
+  .bikeForum .bigFont {
+    font-size: 44px;
+    margin-bottom: 36px;
+    line-height: 44px; }
+
+  .bikeForum .share-your-story .giftcard {
+    font-size: 21px;
+    line-height: 22px; }
+
+  #gear-forum {
+    display: none; }
+
+  .bikeForum .col-xs-12 {
+    padding: 0px; }
+
+  .bikeForum .medFont {
+    font-size: 16px; }
+
+  .bbp-form {
+    padding: 0px !important; }
+
+  .bikeForum .forum .title {
+    padding: 15px 0px !important;
+    font-size: 42px;
+    text-align: center; }
+
+  .bikeForum .forum-post .font70.title {
+    font-size: 31px;
+    text-align: left;
+    line-height: 32px; }
+
+  .goBack a {
+    font-size: 15px; } }
 .welcome-askAdam .adamPic {
   width: 360px; }
 .welcome-askAdam .scrollDown {

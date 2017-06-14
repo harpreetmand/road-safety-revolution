@@ -14,27 +14,12 @@
 <ul id="topic-<?php bbp_topic_id(); ?>-replies" class="forums bbp-replies">
 
 	<li class="bbp-header">
-
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div><!-- .bbp-reply-author -->
-
-		<div class="bbp-reply-content">
-
-			<?php if ( !bbp_show_lead_topic() ) : ?>
-
-				<?php _e( 'Posts', 'bbpress' ); ?>
-
-				<?php bbp_topic_subscription_link(); ?>
-
-				<?php bbp_user_favorites_link(); ?>
-
-			<?php else : ?>
-
-				<?php _e( 'Replies', 'bbpress' ); ?>
-
-			<?php endif; ?>
-
-		</div><!-- .bbp-reply-content -->
-
+		Story Created:
+		<span><?php
+			echo get_the_date('F d Y', $post->ID);
+		?></span>
+		&nbsp;&nbsp;
+		Author: <span><?php echo get_the_author_meta('display_name'); ?></span>
 	</li><!-- .bbp-header -->
 
 	<li class="bbp-body">
@@ -57,19 +42,19 @@
 
 	<li class="bbp-footer">
 
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div>
+		<!-- <div class="bbp-reply-author"></?php  _e( 'Author',  'bbpress' ); ?></div>
 
 		<div class="bbp-reply-content">
 
-			<?php if ( !bbp_show_lead_topic() ) : ?>
+			</?php if ( !bbp_show_lead_topic() ) : ?>
 
-				<?php _e( 'Posts', 'bbpress' ); ?>
+				</?php _e( 'Posts', 'bbpress' ); ?>
 
-			<?php else : ?>
+			</?php else : ?>
 
-				<?php _e( 'Replies', 'bbpress' ); ?>
+				</?php _e( 'Replies', 'bbpress' ); ?>
 
-			<?php endif; ?>
+			</?php endif; ?>
 
 		</div><!-- .bbp-reply-content -->
 

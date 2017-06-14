@@ -2764,7 +2764,7 @@ function bbp_topic_stick_link( $args = '' ) {
 			$super_uri = add_query_arg( array( 'action' => 'bbp_toggle_topic_stick', 'topic_id' => $topic->ID, 'super' => 1 ) );
 			$super_uri = wp_nonce_url( $super_uri, 'stick-topic_' . $topic->ID );
 
-			$super_display = ' <a href="' . esc_url( $super_uri ) . '" class="bbp-topic-super-sticky-link">' . $r['super_text'] . '</a>';
+			$super_display = '';
 		} else {
 			$super_display = '';
 		}
@@ -2772,7 +2772,7 @@ function bbp_topic_stick_link( $args = '' ) {
 		// Combine the HTML into 1 string
 		$retval = $r['link_before'] . $stick_display . $super_display . $r['link_after'];
 
-		return apply_filters( 'bbp_get_topic_stick_link', $retval, $r );
+		// return apply_filters( 'bbp_get_topic_stick_link', $retval, $r );
 	}
 
 /**
@@ -2824,7 +2824,7 @@ function bbp_topic_merge_link( $args = '' ) {
 		$uri    = add_query_arg( array( 'action' => 'merge' ), bbp_get_topic_edit_url( $topic->ID ) );
 		$retval = $r['link_before'] . '<a href="' . esc_url( $uri ) . '" class="bbp-topic-merge-link">' . $r['merge_text'] . '</a>' . $r['link_after'];
 
-		return apply_filters( 'bbp_get_topic_merge_link', $retval, $args );
+		// return apply_filters( 'bbp_get_topic_merge_link', $retval, $args );
 	}
 
 /**
@@ -2883,7 +2883,7 @@ function bbp_topic_spam_link( $args = '' ) {
 		$uri     = wp_nonce_url( $uri, 'spam-topic_' . $topic->ID );
 		$retval  = $r['link_before'] . '<a href="' . esc_url( $uri ) . '" class="bbp-topic-spam-link">' . $display . '</a>' . $r['link_after'];
 
-		return apply_filters( 'bbp_get_topic_spam_link', $retval, $r );
+		// return apply_filters( 'bbp_get_topic_spam_link', $retval, $r );
 	}
 
 /**
@@ -3327,7 +3327,7 @@ function bbp_single_topic_description( $args = '' ) {
 		$retstr = $r['before'] . $retstr . $r['after'];
 
 		// Return filtered result
-		return apply_filters( 'bbp_get_single_topic_description', $retstr, $r );
+		// return apply_filters( 'bbp_get_single_topic_description', $retstr, $r );
 	}
 
 /** Topic Tags ****************************************************************/

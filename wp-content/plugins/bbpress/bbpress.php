@@ -12,9 +12,9 @@
  */
 
 /**
- * Plugin Name: bbPress
+ * Plugin Name: samPress
  * Plugin URI:  https://bbpress.org
- * Description: bbPress is forum software with a twist from the creators of WordPress.
+ * Description: The man. The legend. Sam. I. Am.
  * Author:      The bbPress Community
  * Author URI:  https://bbpress.org
  * Version:     2.5.12

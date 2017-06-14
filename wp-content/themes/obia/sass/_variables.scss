@@ -28,6 +28,19 @@ $lightFont: #58585a;
 .marb20 {
   margin-bottom: 20px !important;
 }
+.mart40 {
+  margin-top: 40px !important;
+}
+
+.goBack {
+    a {
+        color: $lightFont;
+        font-size: 20px;
+        &:hover {
+          color: darken($lightFont, 10);
+        }
+    }
+}
 
 // contents
 .blackbg {
@@ -104,28 +117,28 @@ $lightFont: #58585a;
   }
 }
 
-form.pages{
+form.pages {
   color: $lightFont;
   margin-top: 25px;
   select {
-  min-width: 220px;
-  background: #FFF url(../img/down-arrow.png) no-repeat;
-  background-size: 12px;
-  background-position-x: 93%;
-  background-position-y: 11px;
+    min-width: 220px;
+    background: #FFF url(../img/down-arrow.png) no-repeat;
+    background-size: 12px;
+    background-position-x: 93%;
+    background-position-y: 11px;
   }
-  select, input {
-  height: 32px;
-  border-radius: 0px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-  select, input, textarea {
-  padding: 0 8px;
-  border-style: none;
-}
-  label, input, textarea {
-  width: 100%;
-}
+  select, input {
+    height: 32px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  select, input, textarea {
+    padding: 0 8px;
+    border-style: none;
+  }
+  label, input, textarea {
+    width: 100%;
+  }
 }
