@@ -47,7 +47,7 @@
   <section class="home-roadsigns">
     <div class="container">
       <div class="col-xs-12 col-sm-6">
-        <img class="hidden-xs roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/dooring-incidents.png" alt="Dooring Incidents" />
+        <img class="roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/dooring-incidents.png" alt="Dooring Incidents" />
       </div>
       <div class="col-xs-12 col-sm-6 texted">
         <h3>DOORING</h3>
@@ -89,7 +89,7 @@
   <section class="home-roadsigns" id="btnscr-2h">
     <div class="container">
       <div class="col-xs-12 col-sm-6 col-md-push-6">
-        <img class="hidden-xs roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/collision-incidents.png" alt="Collision Incidents" />
+        <img class="roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/collision-incidents.png" alt="Collision Incidents" />
       </div>
       <div class="col-xs-12 col-sm-6 texted col-md-pull-6">
         <h3>COLLISIONS</h3>
@@ -130,7 +130,7 @@
   <section class="home-roadsigns" id="btnscr-3h">
     <div class="container">
       <div class="col-xs-12 col-sm-6">
-        <img class="hidden-xs roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/pothole-incidents.png" alt="Dooring Incidents" />
+        <img class="roadsign left" src="<?php echo get_template_directory_uri(); ?>/img/pothole-incidents.png" alt="Dooring Incidents" />
       </div>
       <div class="col-xs-12 col-sm-6 texted">
         <h3>POTHOLES</h3>
@@ -173,7 +173,7 @@
   <section class="home-roadsigns" id="btnscr-4h">
     <div class="container">
       <div class="col-xs-12 col-sm-6 col-md-push-6">
-        <img class="hidden-xs roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/roadwork-incidents.png" alt="Road Work Incidents" />
+        <img class="roadsign right" src="<?php echo get_template_directory_uri(); ?>/img/roadwork-incidents.png" alt="Road Work Incidents" />
       </div>
       <div class="col-xs-12 col-sm-6 texted col-md-pull-6">
         <h3>ROAD WORK</h3>

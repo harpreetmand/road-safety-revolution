@@ -56,7 +56,7 @@ a:hover{
     border-color: $yellow;
     .icon-bar {
         background-color: $yellow;
-    }   
+    }
 }
 .navbar-default .navbar-nav
 li:last-child{
@@ -99,8 +99,8 @@ li:last-child{
         right: 0px;
         position: absolute;
         font-size: 30px;
-        line-height: 1;
-        margin-top: 46px;
+        line-height: 36px;
+        margin-top: 27px;
 
     }
     }
@@ -162,13 +162,15 @@ li:last-child{
                 }
         }
         .navbar-default .navbar-toggle{
-            margin-top: 50px;
+            margin-top: 65px;
         }
         .phoneContainer{
             .phoneNumber{
-                font-size: 18px;
+              font-size: 18px;
+              line-height: 1;
+              margin-top: 15px;
             }
         }
-  
-        
+
+
     }
