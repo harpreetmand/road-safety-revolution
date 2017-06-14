@@ -13521,6 +13521,9 @@ a:hover {
   transition: all 0.2s;
   opacity: 1; }
 
+h1 {
+  font-family: "Arial Narrow", Arial, sans-serif; }
+
 @font-face {
   font-family: 'frutiger_lt_std45_light';
   src: url("../fonts/frutigerltstd-light-webfont.eot");

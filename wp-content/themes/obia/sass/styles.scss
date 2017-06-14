@@ -25,6 +25,10 @@ a:hover {
   opacity: 1;
 }
 
+h1 {
+  @include condensedFont;
+}
+
 @font-face {
     font-family: 'frutiger_lt_std45_light';
     src: url('../fonts/frutigerltstd-light-webfont.eot');
