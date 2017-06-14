@@ -101,7 +101,7 @@ function html5blank_header_scripts()
 
 add_action('wp_enqueue_scripts', 'register_myscripts_scripts');
 function register_myscripts_scripts(){
-wp_enqueue_script('jquery'); 
+wp_enqueue_script('jquery');
 wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.1.1', true );
 }
 

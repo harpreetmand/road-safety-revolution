@@ -28,6 +28,19 @@ $lightFont: #58585a;
 .marb20 {
   margin-bottom: 20px !important;
 }
+.mart40 {
+  margin-top: 40px !important;
+}
+
+.goBack {
+    a {
+        color: $lightFont;
+        font-size: 20px;
+        &:hover {
+          color: darken($lightFont, 10);
+        }
+    }
+}
 
 // contents
 .blackbg {

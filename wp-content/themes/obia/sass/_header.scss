@@ -30,8 +30,8 @@ a:hover{
 }
 .navbar{
     background-color: $black;
-    height: 150px;  
-
+    height: 150px;
+    z-index: 1000000000000000000000000;
     .navbar-brand{
         font-size: 40px;
         line-height: 1;
@@ -64,7 +64,7 @@ a:hover{
             padding-bottom: 50px;
             div{
                 margin: 0 auto;
-                display: table;                
+                display: table;
                 span{
                     font-size: 39px
                 }
@@ -74,12 +74,12 @@ a:hover{
         .logos{
             padding: 28px 0;
         }
-        
+
     }
   @media (max-width: 1200px) {
     .navbar .navbar-nav{
         font-size: 18px;
-    }        
+    }
     footer{
         .logos{
                 padding: 50px 0;

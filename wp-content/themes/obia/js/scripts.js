@@ -15,6 +15,7 @@
     bgDivImage();
     parallex();
     buttonScroll();
+    forum();
 	});
 
   function mainBg(){
@@ -94,5 +95,16 @@
       event.preventDefault();
       jQuery('body').animate({ scrollTop: 0});
     })
+  }
+  function forum() {
+    if(document.getElementById('bbp_forum_id')) {
+      var element = document.getElementById('bbp_forum_id');
+      element.value = 810;
+      console.log('yes');
+    }
+    verifyForm();
+  }
+  function verifyForm() {
+    
   }
 })(jQuery, this);

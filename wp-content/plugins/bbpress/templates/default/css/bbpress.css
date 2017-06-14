@@ -17,7 +17,6 @@
 	clear: both;
 	overflow: hidden;
 	font-size: 12px;
-	margin-bottom: -35px;
 }
 
 #bbpress-forums div.even,
@@ -42,7 +41,8 @@ body.reply-edit .reply {
 #bbpress-forums div.bbp-forum-header,
 #bbpress-forums div.bbp-topic-header,
 #bbpress-forums div.bbp-reply-header {
-	background-color: #f4f4f4;
+	background-color: #222;
+	color: #FFF;
 }
 
 #bbpress-forums .status-trash.even,
@@ -129,7 +129,7 @@ li.bbp-forum-info,
 li.bbp-topic-title {
 	float: left;
 	text-align: left;
-	width: 80%;
+	width: 70%;
 }
 li.bbp-forum-topic-count,
 li.bbp-topic-voice-count,
@@ -160,7 +160,7 @@ li.bbp-topic-freshness {
 #bbpress-forums li.bbp-body ul.forum,
 #bbpress-forums li.bbp-body ul.topic {
 	overflow: hidden;
-	padding: 8px;
+	padding: 15px 30px;
 }
 
 li.bbp-header div.bbp-topic-content span#subscription-toggle,
@@ -168,6 +168,7 @@ li.bbp-header div.bbp-topic-content span#favorite-toggle,
 li.bbp-header div.bbp-reply-content span#subscription-toggle,
 li.bbp-header div.bbp-reply-content span#favorite-toggle {
 	float: right;
+	display: none;
 }
 
 #bbpress-forums div.bbp-forum-title h3,
@@ -260,7 +261,7 @@ li.bbp-body div.hentry {
 div.bbp-forum-header,
 div.bbp-topic-header,
 div.bbp-reply-header {
-	border-top: 1px solid #ddd;
+	border-top: 2px solid #ececec;
 	clear: both;
 }
 
@@ -303,6 +304,7 @@ span.bbp-author-ip {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
+	color: #333;
 }
 
 #bbpress-forums div.bbp-topic-content h1,
@@ -453,6 +455,7 @@ div.bbp-topic-tags {
 
 #bbpress-forums div.bbp-search-form {
 	float: right;
+	display: none;
 }
 
 /* =Admin Links
@@ -618,8 +621,6 @@ td.bbp-topic-counts {
 }
 
 #bbpress-forums fieldset.bbp-form {
-	border: 1px solid #eee;
-	padding: 10px 20px;
 	margin-bottom: 10px;
 }
 
@@ -630,6 +631,9 @@ td.bbp-topic-counts {
 #bbpress-forums fieldset.bbp-form label {
 	margin: 0;
 	display: inline-block;
+}
+#bbpress-forums .bbp-attachments-form label {
+	font-size: 16px;
 }
 
 #bbp-edit-topic-tag.bbp-form fieldset.bbp-form label,
@@ -644,6 +648,10 @@ td.bbp-topic-counts {
 #bbpress-forums fieldset.bbp-form select,
 #bbpress-forums fieldset.bbp-form input {
 	margin: 0 0 8px;
+}
+
+.bbp-attachments-form input {
+	display: none !important;
 }
 
 textarea#bbp_reply_content,
@@ -675,6 +683,9 @@ textarea#bbp_forum_content {
 .bbp-reply-form,
 .bbp-topic-tag-form {
 	clear: left;
+}
+.bbp-topic-form form {
+	margin: 30px 0 50px;
 }
 body.topic-edit .bbp-topic-form div.avatar img,
 body.reply-edit .bbp-reply-form div.avatar img,
@@ -708,9 +719,20 @@ body.reply-edit .bbp-reply-form code {
 }
 
 div.bbp-submit-wrapper {
-	margin-top: 15px;
-	float: right;
+	margin-top: 6px;
+	float: left;
 	clear: both;
+}
+div.bbp-submit-wrapper button {
+    background-color: #febe10;
+    color: #000 !important;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    width: 90px !important;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px !important;
+    border: 0px;
 }
 
 p.form-allowed-tags {
@@ -726,7 +748,9 @@ p.form-allowed-tags {
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
 	width: 100%;
 	margin: 0;
-	font-size: 12px;
+	font-size: 14px;
+	color: #58585a;
+	font-family: inherit;
 }
 
 #bbpress-forums div.bbp-the-content-wrapper table,
@@ -759,6 +783,7 @@ p.form-allowed-tags {
 	margin: 0;
 	padding: 0;
 	line-height: 0;
+	border: 1px solid #d4d4d4;
 }
 
 #bbpress-forums div.bbp-the-content-wrapper td.mceStatusbar {
@@ -1136,6 +1161,24 @@ body.my-account #bbpress-forums {
 	visibility: visible;
 }
 
+@media only screen and (max-width: 920px) {
+	li.bbp-forum-info, li.bbp-topic-title {
+	    width: 55%;
+	}
+	.bikeForum .count {
+	    width: 12% !important;
+	}
+	.bikeForum .author-details {
+	    width: 32% !important;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.bikeForum .author-details {
+	    width: 42% !important;
+	}
+}
 /*--------------------------------------------------------------
  Media Queries
 --------------------------------------------------------------*/

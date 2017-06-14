@@ -1,8 +1,4 @@
-
-
 <?php wp_footer(); ?>
-<br/><br/>
-
 <footer>
 	<div class="container">
 		<div class="col-lg-6 col-md-7 black join">
@@ -15,7 +11,7 @@
 			<div class="col-sm-3">
 			<img src="<?php echo home_url(); ?>/img/gears.jpg" class="img-responsive">
 			</div>
-			<div class="col-sm-9">			
+			<div class="col-sm-9">
 			<img src="<?php echo home_url(); ?>/img/thomson-rogers-logo.jpg" class="img-responsive">
 			</div>
 		</div>
@@ -27,7 +23,7 @@
 
 
 
-		
+
 	</div>
 </footer>
 		<!-- analytics -->
