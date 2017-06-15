@@ -1,7 +1,9 @@
 (function ($, root, undefined) {
 	$(function () {
 		'use strict';
-
+setTimeout(function(){
+    $('.carousel').carousel({interval: 2000});
+},5000);
 
       if(document.getElementById("pImage") || document.getElementById("main-bg")){
         $(window).resize(function() {

@@ -13697,8 +13697,10 @@ a {
   color: #231f20;
   text-decoration: underline; }
 
-.yellow a {
+.yellow {
   color: #febe10; }
+  .yellow a {
+    color: #febe10; }
 
 a:hover {
   color: #fff; }
