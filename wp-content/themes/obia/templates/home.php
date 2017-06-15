@@ -216,7 +216,7 @@
 <div class="cf"></div>
 <div class="submit-story">
   <div class="container">
-    <a href="#">Submit Your Story In the Bike Forum</a>
+    <a href="/bike-forum/">Submit Your Story In the Bike Forum</a>
   </div>
 </div>
 <!--</?php get_sidebar(); ?>-->

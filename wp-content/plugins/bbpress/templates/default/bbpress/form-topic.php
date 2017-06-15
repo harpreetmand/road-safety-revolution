@@ -44,6 +44,23 @@
 					</div>
 
 				<?php endif; ?>
+				<?php if ( !bbp_is_single_forum() ) : ?>
+
+					<?php do_action( 'bbp_theme_before_topic_form_forum' ); ?>
+
+					<p>
+						<label for="bbp_forum_id"><?php _e( 'Forum:', 'bbpress' ); ?></label><br />
+						<?php
+							bbp_dropdown( array(
+								'show_none' => __( '(No Forum)', 'bbpress' ),
+								'selected'  => bbp_get_form_topic_forum()
+							) );
+						?>
+					</p>
+
+					<?php do_action( 'bbp_theme_after_topic_form_forum' ); ?>
+
+				<?php endif; ?>
 
 				<?php do_action( 'bbp_template_notices' ); ?>
 

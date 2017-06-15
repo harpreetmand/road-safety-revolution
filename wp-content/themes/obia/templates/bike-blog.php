@@ -23,7 +23,7 @@
 
 
 
-            $db = mysqli_connect("192.168.2.54","root","","bikeBlog") or die("Error " . mysqli_error($link));
+            $db = mysqli_connect("localhost","trwebmai_bsr","3nKwwwgbx(4^8-HwT","i2279670_wp2") or die("Error " . mysqli_error($link));
             $db->set_charset("utf8");
             $result = $db->query("SELECT * FROM `wp_posts` WHERE `post_status` = 'publish' AND `post_type` = 'post' ORDER BY `post_date` DESC");
             if($result->num_rows > 0){
@@ -44,7 +44,7 @@
                         <!--<a href="</?php echo home_url(); ?>/blog?q=</?php echo $row['post_name'];?>"><img src="</?php echo get_template_directory_uri(); ?>/img/</?php echo $row['post_name']; ?>.jpg" class="img-responsive"></a>-->
                         <a href="<?php echo home_url(); ?>/blog?q=<?php echo $row['post_name'];?>">
                         <?php
-                        $file = $_SERVER['DOCUMENT_ROOT']."/obia/wp-content/themes/obia/img/".$row['post_name'].".jpg";
+                        $file = $_SERVER['DOCUMENT_ROOT']."/wp-content/themes/obia/img/".$row['post_name'].".jpg";
                         if(file_exists($file)){
                             ?>
                              <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $row['post_name']; ?>.jpg" class="img-responsive"/>

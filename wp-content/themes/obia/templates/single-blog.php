@@ -6,7 +6,7 @@
 <?php if(isset($_GET['q'])){ ?>
         <div class="blogImage marb20">
             <?php
-                        $file = $_SERVER['DOCUMENT_ROOT']."/obia/wp-content/themes/obia/img/".$_GET['q'].".jpg";
+                        $file = $_SERVER['DOCUMENT_ROOT']."/wp-content/themes/obia/img/".$_GET['q'].".jpg";
                         if(file_exists($file)){
                             ?>
                              <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $_GET['q']; ?>.jpg"  id="paralax"/>
@@ -33,7 +33,7 @@
 
                 $blog =  $_GET['q'];
 
-                $db = mysqli_connect("localhost","root","","bikeBlog") or die("Error " . mysqli_error($link));
+                            $db = mysqli_connect("localhost","trwebmai_bsr","3nKwwwgbx(4^8-HwT","i2279670_wp2") or die("Error " . mysqli_error($link));
             $db->set_charset("utf8");
             $result = $db->query("SELECT * FROM `wp_posts` WHERE `post_status` = 'publish' AND `post_type` = 'post' AND `post_name` = '$blog'");
             if($result->num_rows > 0){
