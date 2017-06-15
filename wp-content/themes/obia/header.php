@@ -16,8 +16,8 @@
         <!-- Open Graph data -->
         <meta property="og:title" content="Join the Road Safety Revolution" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://RoadSafetyRevolution.com/" />
-        <meta property="og:image" content="http://example.com/image.jpg" />
+        <meta property="og:url" content="http://RoadSafetyRevolution.ca/" />
+        <meta property="og:image" content="http://roadsafetyrevolution.ca/img/share-roadsafetyrevolution.jpg" />
         <meta property="og:description" content="Join the Road Safety Revolution today. Thomson, Rogers wants to help make our streets safer for cyclists and everyone else. Change is long overdue. #RoadSafetyRevolution" />
 
 		<?php wp_head(); ?>
