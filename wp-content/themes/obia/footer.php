@@ -1,4 +1,8 @@
+
+
 <?php wp_footer(); ?>
+<br/><br/>
+
 <footer>
 	<div class="container">
 		<div class="col-lg-6 col-md-7 black join">
@@ -11,19 +15,21 @@
 			<div class="col-sm-3">
 			<img src="<?php echo home_url(); ?>/img/gears.jpg" class="img-responsive">
 			</div>
-			<div class="col-sm-9">
+			<div class="col-sm-9">			
 			<img src="<?php echo home_url(); ?>/img/thomson-rogers-logo.jpg" class="img-responsive">
 			</div>
 		</div>
+		<div class="cf"></div>
 
+<div class="socialLinks marb20">
 
-			<div class="cf"></div>
-
-
-
-
-
-
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<i class="fa fa-google-plus" aria-hidden="true"></i>
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+<i class="fa fa-facebook" aria-hidden="true"></i>
+</div>
+		
 	</div>
 </footer>
 		<!-- analytics -->

@@ -13778,6 +13778,11 @@ footer .join {
       font-size: 39px; }
 footer .logos {
   padding: 28px 0; }
+footer .socialLinks i {
+  font-size: 30px;
+  border: 2px solid;
+  padding: 10px 16px;
+  border-radius: 36px; }
 
 .phoneContainer {
   position: relative; }
