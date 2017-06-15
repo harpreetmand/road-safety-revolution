@@ -13778,11 +13778,39 @@ footer .join {
       font-size: 39px; }
 footer .logos {
   padding: 28px 0; }
-footer .socialLinks i {
-  font-size: 30px;
-  border: 2px solid;
-  padding: 10px 16px;
-  border-radius: 36px; }
+footer .socialCopy {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer .socialCopy .space {
+    min-width: 320px; }
+  footer .socialCopy .socialLinks {
+    font-size: 24px; }
+    footer .socialCopy .socialLinks a {
+      font-size: 25px;
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      line-height: 45px;
+      display: inline-block;
+      color: #333;
+      border: 2px solid #333;
+      border-radius: 100%; }
+      footer .socialCopy .socialLinks a:nth-child(1):hover {
+        color: #3b5998;
+        border-color: #3b5998; }
+      footer .socialCopy .socialLinks a:nth-child(2):hover {
+        color: #00aced;
+        border-color: #00aced; }
+      footer .socialCopy .socialLinks a:nth-child(3):hover {
+        color: #d34836;
+        border-color: #d34836; }
+      footer .socialCopy .socialLinks a:nth-child(4):hover {
+        color: #0077B5;
+        border-color: #0077B5; }
+      footer .socialCopy .socialLinks a:nth-child(5):hover {
+        color: #c92c19; }
 
 .phoneContainer {
   position: relative; }
@@ -13832,6 +13860,12 @@ footer .socialLinks i {
     padding: 50px 0; }
     footer .logos img {
       margin: 0 auto; }
+  footer .socialCopy {
+    margin-top: -20px;
+    display: block;
+    text-align: center; }
+    footer .socialCopy .space {
+      margin-bottom: 10px; }
 
   .navbar-default .navbar-toggle {
     margin-top: 65px; }

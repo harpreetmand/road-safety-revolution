@@ -20,16 +20,19 @@
 			</div>
 		</div>
 		<div class="cf"></div>
-
-<div class="socialLinks marb20">
-
-<i class="fa fa-facebook" aria-hidden="true"></i>
-<i class="fa fa-twitter" aria-hidden="true"></i>
-<i class="fa fa-google-plus" aria-hidden="true"></i>
-<i class="fa fa-linkedin" aria-hidden="true"></i>
-<i class="fa fa-facebook" aria-hidden="true"></i>
+<div class="socialCopy marb20">
+	<div class="socialLinks space">
+		Share: 
+		<a href="https://www.facebook.com/sharer/sharer.php?u=roadsafetyrevolution.ca" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/intent/tweet?text=Share your cycling story and join the conversation surrounding bike safety in Toronto at &url=http%3A%2F%2Froadsafetyrevolution.ca&hashtags=bikeSafetyRevolution" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="https://plus.google.com/share?url=roadsafetyrevolution.ca" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://roadsafetyrevolution.ca&title=Cycling in Toronto has reached a controversial and dangerous apex&summary=Share your cycling story and join the conversation surrounding bike safety in Toronto at RoadSafetyRevolution.ca&source=http://roadsafetyrevolution.ca" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		<!--<i class="fa fa-envelope" aria-hidden="true"></i>-->
+	</div>
+	<div class="space">
+	&copy; <?php echo date("Y"); ?> Thomson, Rogers. All Rights Reserved.
+	</div>
 </div>
-		
 	</div>
 </footer>
 		<!-- analytics -->
