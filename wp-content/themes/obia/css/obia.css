@@ -14370,7 +14370,7 @@ footer .logos {
       font-size: 52px; }
     .welcome-bikeLaw .carousel .carousel-inner .small {
       font-size: 14px;
-      line-height: .4; }
+      line-height: 0.4; }
 .welcome-bikeLaw .bikeLawFaq {
   display: flex; }
   .welcome-bikeLaw .bikeLawFaq .faqBlack {
@@ -14391,7 +14391,7 @@ footer .logos {
     .welcome-bikeLaw .bikeLawFaq .flex-item p {
       padding: 10px 30px; }
   .welcome-bikeLaw .bikeLawFaq .bgImage {
-    background: url(../img/bike-law-faq.jpg) no-repeat fixed;
+    background: url("../img/bike-law-faq.jpg") no-repeat fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -14413,7 +14413,7 @@ footer .logos {
     display: flex; }
     .welcome-bikeLaw .top .flex-item {
       width: 100%;
-      background: url(../img/bike-law-girl-on-bike.jpg) no-repeat fixed;
+      background: url("../img/bike-law-girl-on-bike.jpg") no-repeat fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -14422,14 +14422,18 @@ footer .logos {
       /* height: 100%; */
       display: flex; }
       .welcome-bikeLaw .top .flex-item .bgImage {
-        position: relative;
         background-color: rgba(255, 255, 255, 0.7);
         width: 100%; }
 
+  .welcome-bikeLaw .top {
+    min-height: 210px; }
+    .welcome-bikeLaw .top .flex-item {
+      width: 100%; }
+
   .welcome-bikeLaw .carousel .carousel-control {
-    opacity: .2; }
+    opacity: 0.2; }
     .welcome-bikeLaw .carousel .carousel-control:hover {
-      opacity: .9; }
+      opacity: 0.9; }
   .welcome-bikeLaw .carousel .carousel-inner {
     height: auto;
     top: 50%;
@@ -14528,9 +14532,13 @@ footer .logos {
       /* height: 100%; */
       display: flex; }
       .welcome-blog .top .flex-item .bgImage {
-        position: relative;
         background-color: rgba(255, 255, 255, 0.7);
         width: 100%; }
+
+  .welcome-blog .top {
+    min-height: 210px; }
+    .welcome-blog .top .flex-item {
+      width: 100%; }
 
   .welcome-blog .blogs {
     justify-content: space-around; } }
@@ -14690,7 +14698,7 @@ footer .logos {
     display: flex; }
     .welcome-bikeForum .top .flex-item {
       width: 100%;
-      background: url("../img/bike-law-girl-on-bike.jpg") no-repeat fixed;
+      background: url("../img/road-safety-revolution-forum.png") no-repeat fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
