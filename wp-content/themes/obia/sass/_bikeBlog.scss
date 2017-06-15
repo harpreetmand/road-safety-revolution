@@ -1,24 +1,24 @@
 .welcome-blog {
-    .top {
-        display: flex;
-        position: relative;
-        .flex-item {
-            width: 50%;
-            position: relative;
-            .bgImage {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                padding: 15px;
-                margin: 0 auto;
-            }
-        }
-        .scrollDown {
-            @include scrollDown;
-            @include hAllign;
-            bottom: 10px;
-        }
+  .top {
+    display: flex;
+    position: relative;
+    .flex-item {
+      width: 50%;
+      position: relative;
+      .bgImage {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 15px;
+        margin: 0 auto;
+      }
     }
+    .scrollDown {
+      @include scrollDown;
+      @include hAllign;
+      bottom: 10px;
+    }
+  }
     .blogs {
         display: -webkit-box;
         display: -moz-box;
@@ -109,11 +109,17 @@
                 /* height: 100%; */
                 display: flex;
                 .bgImage {
-                    position: relative;
+                    // position: relative;
                     background-color: rgba(255, 255, 255, 0.7);
                     width: 100%;
                 }
             }
+        }
+    }
+    .welcome-blog .top {
+        min-height: 210px;
+        .flex-item {
+          width: 100%;
         }
     }
     .welcome-blog .blogs {

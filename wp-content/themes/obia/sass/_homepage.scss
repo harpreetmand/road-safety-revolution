@@ -29,10 +29,13 @@
           position: absolute;
           width: 450px;
           margin-left: 50%;
-          -webkit-transform: translate(-50%, -42%);
-          -moz-transform: translate(-50%, -42%);
-          transform: translate(-50%, -42%);
+          -webkit-transform: translate(-50%, 42%);
+          transform: translate(-50%, 42%);
+          -moz-transform: translate(-50%, 42%);
           z-index: 10;
+          bottom: 0;
+          left: 0;
+          right: 0;
         }
       }
     }
@@ -248,9 +251,13 @@
           }
           img#join-the-rsr {
             width: 600px;
-            -webkit-transform: translate(-50%, -42%);
-            -moz-transform: translate(-50%, -42%);
-            transform: translate(-50%, -42%);
+            -webkit-transform: translate(-50%, 42%);
+            transform: translate(-50%, 42%);
+            -moz-transform: translate(-50%, 42%);
+            z-index: 10;
+            bottom: 0;
+            left: 0;
+            right: 0;
           }
       }
     }

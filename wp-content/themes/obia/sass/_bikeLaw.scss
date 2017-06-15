@@ -1,92 +1,91 @@
-
-.welcome-bikeLaw{
-    .top{
-        display: flex;
-        position: relative;
-        .flex-item{
-            width: 50%;
-            position: relative;
-            .bgImage{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                padding: 15px;
-                    margin: 0 auto;
-            }
-
-        }
-        .scrollDown{
-            @include scrollDown;
-            @include hAllign;
-            bottom: 10px;
-        }
+.welcome-bikeLaw {
+  .top {
+    display: flex;
+    position: relative;
+    .flex-item {
+      width: 50%;
+      position: relative;
+      .bgImage {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 15px;
+        margin: 0 auto;
+      }
     }
-    .carousel{
-        height: 250px;
-        background-color: $black;
-        .carousel-control{
-            margin: 0 20px;
-            @include scrollDown;
-            bottom: auto;
-            width: auto;
-            @include vAllign;
-        }
-        .carousel-inner{
-            position: absolute;
-            text-align: center;
-            left: 50%;
-            top: 75%;
-            transform: translate(-50%, -50%);
-            color: $white;
-            height: 250px;
-            width: 70%;
-            .font{
-                font-size: 52px;
-            }
-            .small{
-                font-size: 14px;
-                line-height: .4;
-            }
-        }
+    .scrollDown {
+      @include scrollDown;
+      @include hAllign;
+      bottom: 10px;
     }
-    .bikeLawFaq{
-        display: flex;
-        .faqBlack{
-            background-color: $black;
-            color: $white;
-            .font100{
-                padding: 50px 70px;
-                color: $white;
-                font-size: 85px;
-                line-height: 1;
-            }
-        }
-        .flex-item{
-            width: 50%;
-            position: relative;
-            .yellowBack{
-                background-color: $yellow;
-                font-size: 20px;
-                padding: 10px 30px;
-            }
-            p{
-                padding: 10px 30px;
-            }
-        }
-        .bgImage{
-            background: url(../img/bike-law-faq.jpg) no-repeat fixed;
-            -webkit-background-size: contain;
-            -moz-background-size: contain;
-            -o-background-size: contain;
-            background-size: contain;
-            // background-position: 240px 0%;
-                // background-position-x: (100% - 1170px) / 2;
-            height: 100%;
-        }
+  }
+  .carousel {
+    height: 250px;
+    background-color: $black;
+    .carousel-control {
+      margin: 0 20px;
+      @include scrollDown;
+      bottom: auto;
+      width: auto;
+      @include vAllign;
     }
+    .carousel-inner {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 75%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      height: 250px;
+      width: 70%;
+      .font {
+        font-size: 52px;
+      }
+      .small {
+        font-size: 14px;
+        line-height: 0.4;
+      }
+    }
+  }
+  .bikeLawFaq {
+    display: flex;
+    .faqBlack {
+      background-color: $black;
+      color: $white;
+      .font100 {
+        padding: 50px 70px;
+        color: $white;
+        font-size: 85px;
+        line-height: 1;
+      }
+    }
+    .flex-item {
+      width: 50%;
+      position: relative;
+      .yellowBack {
+        background-color: $yellow;
+        font-size: 20px;
+        padding: 10px 30px;
+      }
+      p {
+        padding: 10px 30px;
+      }
+    }
+    .bgImage {
+      background: url("../img/bike-law-faq.jpg") no-repeat fixed;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      // background-position: 240px 0%;
+      // background-position-x: (100% - 1170px) / 2;
+      height: 100%;
+    }
+  }
 }
-
-.carousel-indicators li { visibility: hidden; }
+.carousel-indicators li {
+  visibility: hidden;
+}
 // .font100{
 //     @include condensedFont;
 //     font-size: 120px;
@@ -94,7 +93,6 @@
 //     font-weight: 900;
 //     color: #231f20;
 // }
-
 @media (max-width: 992px) {
   .font120 {
     font-size: 75px;
@@ -104,79 +102,56 @@
     width: 100%;
   }
 }
-
-    @media (max-width: 767px) {
-       .welcome-bikeLaw{
-    .top{
+@media (max-width: 767px) {
+  .welcome-bikeLaw {
+    .top {
+      display: flex;
+      .flex-item {
+        width: 100%;
+        background: url("../img/bike-law-girl-on-bike.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover cover;
+        background-position: 30% 24%;
+        /* height: 100%; */
         display: flex;
-        .flex-item{
-            width: 100%;
-            background: url(../img/bike-law-girl-on-bike.jpg) no-repeat fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover cover;
-            background-position: 30% 24%;
-            /* height: 100%; */
-            display: flex;
-            .bgImage{
-                position: relative;
-                background-color: rgba(255, 255, 255, 0.7);
-                width: 100%;
-            }
+        .bgImage {
+          // position: relative;
+          background-color: rgba(255, 255, 255, 0.7);
+          width: 100%;
         }
+      }
     }
-
-
+  }
+  .welcome-bikeLaw .top {
+      min-height: 210px;
+      .flex-item {
+        width: 100%;
+      }
+  }
+  .welcome-bikeLaw {
+    .carousel {
+      .carousel-control {
+        opacity: 0.2;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+      .carousel-inner {
+        height: auto;
+        top: 50%;
+        width: 80%;
+        .font {
+          font-size: 20px;
+        }
+        .small {}
+      }
+    }
+  }
 }
-.welcome-bikeLaw{
-    .carousel{
-
-        .carousel-control{
-            opacity: .2;
-            &:hover{
-                opacity: .9;
-            }
-        }
-        .carousel-inner{
-  height: auto;
-  top: 50%;
-  width: 80%;
-            .font{
-                font-size: 20px;
-            }
-            .small{
-
-            }
-        }
-    }
+@media (max-width: 500px) {
+  .welcome-bikeLaw .bikeLawFaq .faqBlack .font100 {
+    font-size: 38px;
+  }
 }
-
-    }
-
-    @media (max-width: 500px) {
-        .welcome-bikeLaw .bikeLawFaq .faqBlack .font100 {
-            font-size: 38px;
-        }
-
-    }
-        //     background: url(../img/bike-law-girl-on-bike.jpg) no-repeat center center fixed;
-        // -webkit-background-size: cover;
-        // -moz-background-size: cover;
-        // -o-background-size: cover;
-        // background-size: cover;
-        // height: 100%;
-        // display: flex;
-
-    // @media (min-width: 1750px) {
-    //     .welcome-bikeLaw .bikeLawFaq .bgImage{
-    //         background: url(../img/bike-law-faq.jpg) no-repeat center center fixed;
-    //         -webkit-background-size: contain;
-    //         -moz-background-size: cover;
-    //         -o-background-size: cover;
-    //         background-size: 36%;
-    //         background-position: 400px 0%;
-    //         height: 800px
-    //     }
-
-    // }
