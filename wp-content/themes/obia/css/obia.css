@@ -13878,7 +13878,7 @@ footer .socialCopy {
     line-height: 1;
     margin-top: 15px; } }
 .welcome-main {
-  background: url(../img/road-safety-revolution.png) no-repeat center center fixed #000;
+  background: url(../img/road-safety-revolution.jpg) no-repeat center center fixed #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13928,7 +13928,7 @@ footer .socialCopy {
 .enter-to-win .right {
   width: 50%;
   position: relative;
-  background: url(../img/win-a-bike-helmet-today.png) no-repeat fixed;
+  background: url(../img/win-a-bike-helmet-today.jpg) no-repeat fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -13993,13 +13993,13 @@ footer .socialCopy {
     .home-roadbg .home-roadbg-pic.bigger {
       min-height: 800px; }
     .home-roadbg .home-roadbg-pic.dooring-bg {
-      background: url(../img/road-safety-sign-1.png) no-repeat center center fixed; }
+      background: url(../img/road-safety-sign-1.jpg) no-repeat center center fixed; }
     .home-roadbg .home-roadbg-pic.collisions-bg {
-      background: url(../img/road-safety-sign-2.png) no-repeat center center fixed; }
+      background: url(../img/road-safety-sign-2.jpg) no-repeat center center fixed; }
     .home-roadbg .home-roadbg-pic.potholes-bg {
-      background: url(../img/road-safety-sign-3.png) no-repeat center center fixed; }
+      background: url(../img/road-safety-sign-3.jpg) no-repeat center center fixed; }
     .home-roadbg .home-roadbg-pic.roadwork-bg {
-      background: url(../img/road-safety-sign-4.png) no-repeat center center fixed; }
+      background: url(../img/road-safety-sign-4.jpg) no-repeat center center fixed; }
   .home-roadbg .roadsign-text {
     font-family: "Arial Narrow", Arial, sans-serif;
     position: absolute;
