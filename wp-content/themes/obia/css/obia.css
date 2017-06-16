@@ -11082,6 +11082,9 @@ img.tp-slider-alternative-image {
 .condensedFont {
   font-family: "Arial Narrow", Arial, sans-serif; }
 
+.errors {
+  border: 2px solid red; }
+
 .mar0 {
   margin: 0px !important; }
 
