@@ -11083,7 +11083,7 @@ img.tp-slider-alternative-image {
   font-family: "Arial Narrow", Arial, sans-serif; }
 
 .errors {
-  border: 2px solid red; }
+  border: 2px solid red !important; }
 
 .mar0 {
   margin: 0px !important; }
