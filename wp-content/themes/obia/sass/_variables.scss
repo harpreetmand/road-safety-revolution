@@ -9,12 +9,14 @@ $linkColor: #fff;
 $lightFont: #58585a;
 
 
+// FONTS
+
 // MIXINS
 @mixin condensedFont {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
 }
 .condensedFont {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
 }
 
 .errors {

@@ -60,6 +60,43 @@ h1 {
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'HelveticaNeueLTCom-Cn';
+    src: url('../fonts/helveticaneueltcom-cn.eot');
+    src: url('../fonts/helveticaneueltcom-cn.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneueltcom-cn.woff') format('woff'), url('../fonts/helveticaneueltcom-cn.ttf') format('truetype'), url('../fonts/helveticaneueltcom-cn.svg#helveticaneueltcom-cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueLTCom-Bdcn';
+    src: url('../fonts/helveticaneueltcom-bdcn.eot');
+    src: url('../fonts/helveticaneueltcom-bdcn.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneueltcom-bdcn.woff') format('woff'), url('../fonts/helveticaneueltcom-bdcn.ttf') format('truetype'), url('../fonts/helveticaneueltcom-bdcn.svg#helveticaneueltcom-bdcn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueLTCom-roman';
+    src: url('../fonts/helveticaneueltcom-roman.eot');
+    src: url('../fonts/helveticaneueltcom-roman.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneueltcom-roman.woff') format('woff'), url('../fonts/helveticaneueltcom-roman.ttf') format('truetype'), url('../fonts/helveticaneueltcom-roman.svg#helveticaneueltcom-roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueLTCom-Bd';
+    src: url('../fonts/helveticaneueltcom-bd.eot');
+    src: url('../fonts/helveticaneueltcom-bd.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneueltcom-bd.woff') format('woff'), url('../fonts/helveticaneueltcom-bd.ttf') format('truetype'), url('../fonts/helveticaneueltcom-bd.svg#helveticaneueltcom-bd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas-neue';
+    src: url('../fonts/BebasNeue.eot');
+    src: url('../fonts/BebasNeue.woff') format('woff'), url('../fonts/BebasNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $primaryFont: 'frutiger_lt_std45_light';
 $boldFont: 'frutiger_lt_std65_bold';
 

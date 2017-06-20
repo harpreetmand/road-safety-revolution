@@ -11080,7 +11080,7 @@ img.tp-slider-alternative-image {
   z-index: 0; }
 
 .condensedFont {
-  font-family: "Arial Narrow", Arial, sans-serif; }
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
 
 .errors {
   border: 2px solid red !important; }
@@ -11118,14 +11118,14 @@ img.tp-slider-alternative-image {
   padding-right: 0px !important; }
 
 .font120 {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   font-size: 120px;
   line-height: 1;
   font-weight: 900;
   color: #231f20; }
 
 .font70 {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   font-size: 70px;
   line-height: 1;
   font-weight: 900;
@@ -11142,7 +11142,7 @@ img.tp-slider-alternative-image {
 .wpcf7-submit {
   background-color: #febe10;
   color: #000 !important;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   width: 90px !important;
   font-size: 20px !important;
   text-transform: uppercase;
@@ -13525,7 +13525,7 @@ a:hover {
   opacity: 1; }
 
 h1 {
-  font-family: "Arial Narrow", Arial, sans-serif; }
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
 
 @font-face {
   font-family: 'frutiger_lt_std45_light';
@@ -13543,6 +13543,36 @@ h1 {
   font-family: 'frutiger_lt_std55_roman';
   src: url("../fonts/frutigerltstd-roman-webfont.eot");
   src: url("../fonts/frutigerltstd-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/frutigerltstd-roman-webfont.woff") format("woff"), url("../fonts/frutigerltstd-roman-webfont.ttf") format("truetype"), url("../fonts/frutigerltstd-roman-webfont.svg#frutiger_lt_std55_roman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeueLTCom-Cn';
+  src: url("../fonts/helveticaneueltcom-cn.eot");
+  src: url("../fonts/helveticaneueltcom-cn.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltcom-cn.woff") format("woff"), url("../fonts/helveticaneueltcom-cn.ttf") format("truetype"), url("../fonts/helveticaneueltcom-cn.svg#helveticaneueltcom-cn") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeueLTCom-Bdcn';
+  src: url("../fonts/helveticaneueltcom-bdcn.eot");
+  src: url("../fonts/helveticaneueltcom-bdcn.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltcom-bdcn.woff") format("woff"), url("../fonts/helveticaneueltcom-bdcn.ttf") format("truetype"), url("../fonts/helveticaneueltcom-bdcn.svg#helveticaneueltcom-bdcn") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeueLTCom-roman';
+  src: url("../fonts/helveticaneueltcom-roman.eot");
+  src: url("../fonts/helveticaneueltcom-roman.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltcom-roman.woff") format("woff"), url("../fonts/helveticaneueltcom-roman.ttf") format("truetype"), url("../fonts/helveticaneueltcom-roman.svg#helveticaneueltcom-roman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeueLTCom-Bd';
+  src: url("../fonts/helveticaneueltcom-bd.eot");
+  src: url("../fonts/helveticaneueltcom-bd.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltcom-bd.woff") format("woff"), url("../fonts/helveticaneueltcom-bd.ttf") format("truetype"), url("../fonts/helveticaneueltcom-bd.svg#helveticaneueltcom-bd") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'bebas-neue';
+  src: url("../fonts/BebasNeue.eot");
+  src: url("../fonts/BebasNeue.woff") format("woff"), url("../fonts/BebasNeue.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 body {
@@ -13741,7 +13771,8 @@ a:hover {
   .navbar .navbar-brand {
     font-size: 40px;
     line-height: 1;
-    color: #fff; }
+    color: #fff;
+    font-family: "HelveticaNeueLTCom-roman"; }
   .navbar .navbar-nav {
     position: relative;
     top: 100px;
@@ -13825,7 +13856,8 @@ footer .socialCopy {
     position: absolute;
     font-size: 30px;
     line-height: 36px;
-    margin-top: 27px; }
+    margin-top: 35px;
+    font-family: "HelveticaNeueLTCom-roman"; }
 
 @media (max-width: 1200px) {
   .navbar .navbar-nav {
@@ -13895,12 +13927,12 @@ footer .socialCopy {
       float: right;
       width: 380px;
       position: relative;
-      font-family: "Arial Narrow", Arial, sans-serif; }
+      font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
       .welcome-main .container .win-a-bike p {
-        font-size: 42px;
+        font-size: 51px;
         font-weight: bold;
         text-align: center;
-        line-height: 49px;
+        line-height: 51px;
         padding: 50px 0; }
       .welcome-main .container .win-a-bike img {
         width: 100%; }
@@ -13963,7 +13995,7 @@ footer .socialCopy {
   .home-roadsigns .container > .col-sm-6 {
     min-height: 400px; }
   .home-roadsigns h3 {
-    font-family: "Arial Narrow", Arial, sans-serif;
+    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
     font-size: 100px;
     margin-top: 110px; }
   .home-roadsigns p {
@@ -14001,7 +14033,7 @@ footer .socialCopy {
     .home-roadbg .home-roadbg-pic.roadwork-bg {
       background: url(../img/road-safety-sign-4.jpg) no-repeat center center fixed; }
   .home-roadbg .roadsign-text {
-    font-family: "Arial Narrow", Arial, sans-serif;
+    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -14022,9 +14054,10 @@ footer .socialCopy {
     .home-roadbg .roadsign-text.type-1, .home-roadbg .roadsign-text.type-3 {
       font-size: 47px; }
       .home-roadbg .roadsign-text.type-1 span, .home-roadbg .roadsign-text.type-3 span {
-        font-size: 160px;
+        font-size: 154px;
         display: inline-block;
-        margin: -50px 0 -25px; }
+        margin: -50px 0 -25px;
+        padding-top: 41px; }
     .home-roadbg .roadsign-text.type-3 span {
       float: left; }
     .home-roadbg .roadsign-text.type-3 p {
@@ -14060,7 +14093,7 @@ footer .socialCopy {
 .submit-story {
   background-color: #febe10;
   text-align: center;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   padding: 12px;
   font-weight: bold;
   margin-top: 7px; }
@@ -14147,7 +14180,7 @@ footer .socialCopy {
   .home-roadbg .roadsign-text.type-1 span, .home-roadbg .roadsign-text.type-3 span {
     font-size: 130px;
     display: inline-block;
-    margin: -17px 0 -25px; } }
+    margin: -41px 0 -25px; } }
 @media (max-width: 768px) {
   .enter-to-win .left {
     padding: 20px 20px !important; }
@@ -14521,7 +14554,7 @@ footer .socialCopy {
     margin: 15px 0px; }
     .welcome-blog .blogs .blogsAll .blogsTitle {
       font-size: 24px;
-      font-family: "Arial Narrow", Arial, sans-serif;
+      font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
       padding: 15px;
       line-height: 1;
       height: 90px; }
@@ -14545,7 +14578,7 @@ footer .socialCopy {
     width: 100%;
     transition: all 0.2s; }
 .welcome-single-blog .blogsAll .blogsTitle {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   font-size: 40px;
   text-transform: uppercase; }
 .welcome-single-blog .blogsAll .author {
@@ -14597,7 +14630,7 @@ footer .socialCopy {
     width: 100%;
     float: none; } }
 .bikeForum .bigFont {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   font-size: 72px; }
 .bikeForum .medFont {
   font-size: 19px; }
@@ -14653,7 +14686,7 @@ footer .socialCopy {
   font-weight: 700;
   padding-top: 5px;
   padding-left: 5px;
-  font-family: "Arial Narrow", Arial, sans-serif; }
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
   .bikeForum .forum .bbp-forum-info a i {
     font-size: 20px; }
 .bikeForum .forum-topic {
@@ -14692,7 +14725,7 @@ footer .socialCopy {
   .bikeForum .author-details .author {
     font-size: 15px;
     line-height: 18px;
-    font-family: "Arial Narrow", Arial, sans-serif;
+    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
     font-weight: 700;
     display: block;
     padding: 2px 0; }
@@ -14718,7 +14751,7 @@ footer .socialCopy {
   font-size: 16px;
   font-family: "Arial Narrow", Arial, sans-serif;
   padding: 30px 0 12px;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
   background-color: #febe10; }
   .bikeForum .forum-post #bbpress-forums li.bbp-header span {
     font-weight: 300; }
@@ -14773,7 +14806,7 @@ footer .socialCopy {
     display: none; } }
 @media (max-width: 450px) {
   .font120 {
-    font-family: "Arial Narrow", Arial, sans-serif;
+    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
     font-size: 55px;
     line-height: 53px; }
 
