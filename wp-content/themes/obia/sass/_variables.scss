@@ -147,3 +147,14 @@ form.pages {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .scrollDown, .scroll-up {
+      width: 70px;
+      height: 70px;
+      img {
+        width: 28px !important;
+        margin-bottom: 25px !important;
+      }
+    }
+}
