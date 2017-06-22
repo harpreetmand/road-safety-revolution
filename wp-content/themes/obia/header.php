@@ -7,7 +7,7 @@
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,6 @@
         <meta property="og:url" content="http://RoadSafetyRevolution.ca/" />
         <meta property="og:image" content="http://roadsafetyrevolution.ca/img/share-roadsafetyrevolution.jpg" />
         <meta property="og:description" content="Join the Road Safety Revolution today. Thomson, Rogers wants to help make our streets safer for cyclists and everyone else. Change is long overdue. #RoadSafetyRevolution" />
-
 		<?php wp_head(); ?>
 		<script>
         // conditionizr.com
@@ -41,7 +40,7 @@
 
 		    <!--</?php echo wp_nav_menu( 'nav-menu' ); ?>-->
             <nav class="navbar navbar-default marb7" role="navigation">
-                <div class="container">        
+                <div class="container">
                 <div class="container-fluid">
                     <div class="phoneContainer">
                         <div class="phoneNumber">
@@ -79,4 +78,3 @@
                     </div>
                 </div>
             </nav>
-   

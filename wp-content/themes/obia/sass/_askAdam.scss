@@ -1,36 +1,49 @@
 .welcome-askAdam{
     .adamPic{
         width: 360px;
-  
+
     }
     .scrollDown{
         bottom: auto;
         @include hAllign;
-        left: 38%;
+        left: 0%;
+        right: 0%;
         margin-top: 30px;
+    }
+    .askAdamTop {
+      margin-top: 55px;
+    }
+    .aboutAdam {
+      margin-top: 15px;
     }
     .askAdamBottom{
         display: -webkit-box;
         display: box;
         background-color: $black;
             .full{
-                padding: 30px;
+                padding: 40px;
                 .askAdamFormLine{
                     color: $white;
-                    font-size: 20px;
+                    font-size: 25px;
+                    font-family: 'Fjalla One', sans-serif;
+                    letter-spacing: 1.5px;
+                    span {
+                      color: $yellow;
+                    }
                 }
 
                 form.pages{
                     margin-top: 0px;
-                    
+
 
                     label{
                         width: 100%;
                     }
                     #req{
-                        color: $white;
-                        font-size: 12px;
-                        line-height: .6;
+                      font-size: 13px;
+                      line-height: 18px;
+                      display: block;
+                      color: #d2d2d2 !important;
                     }
                 }
             }
@@ -67,7 +80,7 @@
             .adamPic{
                 width: 250px;
             }
-            
+
         }
     }
     @media (max-width: 400px) {
@@ -76,6 +89,6 @@
             .adamPic{
                 width: 100%;
             }
-            
+
         }
     }

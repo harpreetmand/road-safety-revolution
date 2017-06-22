@@ -13,10 +13,10 @@ $lightFont: #58585a;
 
 // MIXINS
 @mixin condensedFont {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
 }
 .condensedFont {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .errors {
@@ -67,7 +67,7 @@ $lightFont: #58585a;
 .font120 {
   @include condensedFont;
   font-size: 120px;
-  line-height: 1;
+  line-height: 132px;
   font-weight: 900;
   color: $fontColor;
 }

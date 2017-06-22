@@ -11080,7 +11080,7 @@ img.tp-slider-alternative-image {
   z-index: 0; }
 
 .condensedFont {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
+  font-family: 'Fjalla One', sans-serif; }
 
 .errors {
   border: 2px solid red !important; }
@@ -11118,14 +11118,14 @@ img.tp-slider-alternative-image {
   padding-right: 0px !important; }
 
 .font120 {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 120px;
-  line-height: 1;
+  line-height: 132px;
   font-weight: 900;
   color: #231f20; }
 
 .font70 {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 70px;
   line-height: 1;
   font-weight: 900;
@@ -11142,7 +11142,7 @@ img.tp-slider-alternative-image {
 .wpcf7-submit {
   background-color: #febe10;
   color: #000 !important;
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   width: 90px !important;
   font-size: 20px !important;
   text-transform: uppercase;
@@ -13532,7 +13532,7 @@ a:hover {
   opacity: 1; }
 
 h1 {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
+  font-family: 'Fjalla One', sans-serif; }
 
 @font-face {
   font-family: 'frutiger_lt_std45_light';
@@ -13740,6 +13740,12 @@ a {
   color: #231f20;
   text-decoration: underline; }
 
+.footer-jtr {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 114px; }
+  .footer-jtr span {
+    font-family: "frutiger_lt_std45_light"; }
+
 .yellow {
   color: #febe10; }
   .yellow a {
@@ -13934,7 +13940,7 @@ footer .socialCopy {
       float: right;
       width: 380px;
       position: relative;
-      font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
+      font-family: 'Fjalla One', sans-serif; }
       .welcome-main .container .win-a-bike p {
         font-size: 51px;
         font-weight: bold;
@@ -14002,7 +14008,7 @@ footer .socialCopy {
   .home-roadsigns .container > .col-sm-6 {
     min-height: 400px; }
   .home-roadsigns h3 {
-    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 100px;
     margin-top: 110px; }
   .home-roadsigns p {
@@ -14040,7 +14046,7 @@ footer .socialCopy {
     .home-roadbg .home-roadbg-pic.roadwork-bg {
       background: url(../img/road-safety-sign-4.jpg) no-repeat center center fixed; }
   .home-roadbg .roadsign-text {
-    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+    font-family: 'Fjalla One', sans-serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -14100,7 +14106,7 @@ footer .socialCopy {
 .submit-story {
   background-color: #febe10;
   text-align: center;
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   padding: 12px;
   font-weight: bold;
   margin-top: 7px; }
@@ -14561,13 +14567,14 @@ footer .socialCopy {
     margin: 15px 0px; }
     .welcome-blog .blogs .blogsAll .blogsTitle {
       font-size: 24px;
-      font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+      font-family: 'Fjalla One', sans-serif;
       padding: 15px;
-      line-height: 1;
+      line-height: 31px;
       height: 90px; }
     .welcome-blog .blogs .blogsAll .blogsBody {
       padding: 15px;
-      height: 200px; }
+      height: 200px;
+      margin-top: 10px; }
     .welcome-blog .blogs .blogsAll .readMore {
       background-color: #febe10;
       width: 50px;
@@ -14597,7 +14604,7 @@ footer .socialCopy {
     width: 100%;
     transition: all 0.2s; }
 .welcome-single-blog .blogsAll .blogsTitle {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 40px;
   text-transform: uppercase; }
 .welcome-single-blog .blogsAll .author {
@@ -14649,7 +14656,7 @@ footer .socialCopy {
     width: 100%;
     float: none; } }
 .bikeForum .bigFont {
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 72px; }
 .bikeForum .medFont {
   font-size: 19px; }
@@ -14705,7 +14712,7 @@ footer .socialCopy {
   font-weight: 700;
   padding-top: 5px;
   padding-left: 5px;
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial; }
+  font-family: 'Fjalla One', sans-serif; }
   .bikeForum .forum .bbp-forum-info a i {
     font-size: 20px; }
 .bikeForum .forum-topic {
@@ -14744,7 +14751,7 @@ footer .socialCopy {
   .bikeForum .author-details .author {
     font-size: 15px;
     line-height: 18px;
-    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+    font-family: 'Fjalla One', sans-serif;
     font-weight: 700;
     display: block;
     padding: 2px 0; }
@@ -14770,7 +14777,7 @@ footer .socialCopy {
   font-size: 16px;
   font-family: "Arial Narrow", Arial, sans-serif;
   padding: 30px 0 12px;
-  font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+  font-family: 'Fjalla One', sans-serif;
   background-color: #febe10; }
   .bikeForum .forum-post #bbpress-forums li.bbp-header span {
     font-weight: 300; }
@@ -14825,7 +14832,7 @@ footer .socialCopy {
     display: none; } }
 @media (max-width: 450px) {
   .font120 {
-    font-family: "HelveticaNeueLTCom-Bdcn", "HelveticaNeueLTCom-Cn", Arial;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 55px;
     line-height: 53px; }
 
@@ -14869,25 +14876,35 @@ footer .socialCopy {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  left: 38%;
+  left: 0%;
+  right: 0%;
   margin-top: 30px; }
+.welcome-askAdam .askAdamTop {
+  margin-top: 55px; }
+.welcome-askAdam .aboutAdam {
+  margin-top: 15px; }
 .welcome-askAdam .askAdamBottom {
   display: -webkit-box;
   display: box;
   background-color: #000; }
   .welcome-askAdam .askAdamBottom .full {
-    padding: 30px; }
+    padding: 40px; }
     .welcome-askAdam .askAdamBottom .full .askAdamFormLine {
       color: #fff;
-      font-size: 20px; }
+      font-size: 25px;
+      font-family: 'Fjalla One', sans-serif;
+      letter-spacing: 1.5px; }
+      .welcome-askAdam .askAdamBottom .full .askAdamFormLine span {
+        color: #febe10; }
     .welcome-askAdam .askAdamBottom .full form.pages {
       margin-top: 0px; }
       .welcome-askAdam .askAdamBottom .full form.pages label {
         width: 100%; }
       .welcome-askAdam .askAdamBottom .full form.pages #req {
-        color: #fff;
-        font-size: 12px;
-        line-height: .6; }
+        font-size: 13px;
+        line-height: 18px;
+        display: block;
+        color: #d2d2d2 !important; }
   .welcome-askAdam .askAdamBottom img {
     margin-top: 20px; }
 

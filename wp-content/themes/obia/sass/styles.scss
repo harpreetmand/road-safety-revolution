@@ -321,6 +321,13 @@ a{
     color: $fontColor;
     text-decoration: underline;
 }
+.footer-jtr {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 114px;
+  span {
+    font-family: "frutiger_lt_std45_light";
+  }
+}
 @import 'header';
 @import 'homepage';
 @import 'bikeLaw';
