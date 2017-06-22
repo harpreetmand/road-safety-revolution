@@ -11153,8 +11153,8 @@ img.tp-slider-alternative-image {
 .scrollDown, .scroll-up {
   position: absolute;
   background-color: #febe10;
-  width: 85px;
-  height: 85px;
+  width: 75px;
+  height: 75px;
   text-align: center;
   border-radius: 100%;
   font-size: 52px;
@@ -14906,7 +14906,10 @@ footer .socialCopy {
         display: block;
         color: #d2d2d2 !important; }
   .welcome-askAdam .askAdamBottom img {
-    margin-top: 20px; }
+    bottom: 0px;
+    position: absolute;
+    right: 30px;
+    max-width: 345px; }
 
 @media (max-width: 992px) {
   .welcome-askAdam .adamPic {

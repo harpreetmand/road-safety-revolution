@@ -23,11 +23,11 @@
         </div>
         <div class="cf"></div>
         <div class="askAdamBottom">
-            <div class="col-sm-8 full">
+            <div class="col-md-8 full">
                 <span class="askAdamFormLine">SUBMIT A CYCLING RELATED LEGAL QUESTION TO ADAM</span>
                 <?php echo do_shortcode('[contact-form-7 id="794" title="ask-adam" html_class="pages"]');?>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/join-the-road-safety-revolution.png" alt="Join the road safety revolution" class="img-responsive"/>
             </div>
         </div>
